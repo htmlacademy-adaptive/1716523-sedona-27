@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a href="#" class="main-header__logo">
+      <img src="/source/img/header-logo.svg" alt="Логотип города Седона." class="main-header__logo-img" width="185"
+        height="96">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle">
+        <span class="visually-hidden">кнопка вызова меню навигации</span>
+      </button>
+      <div class="main-nav__menu-list_wrapper">
+        <ul class="main-nav__menu-list">
+          <li class="main-nav__menu-item">главная
+            <button class="close-button">
+              <span class="visually-hidden">закрыть</span>
+            </button>
+          </li>
+          <li class="main-nav__menu-item">фото и видео</li>
+          <li class="main-nav__menu-item">форма отзыва</li>
+          <li class="main-nav__menu-item">html academy</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="form-hero">
+    <h1 class="form-hero__title visually-hidden">
+      Седона
+    </h1>
+  </section>
+  <section class="review">
+    <h2 class="review__title">
+      Оставьте свой отзыв
+    </h2>
+    <p class="review-text">
+      Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+    </p>
+    <form class="review-form" action="https://echo.htmlacademy.ru/"  method="post">
+      <div class="name-form__wrapper">
+        <h2 class="name-inputs__title">представьтесь:</h2>
+        <label class="name-inputs__label" for="first-name">имя*:
+          <input class="name-input" type="text" placeholder="Петр" name="first-name">
+        </label>
+        <label class="name-inputs__label" for="lastst-name">фамилия*:
+          <input class="name-input" type="text" placeholder="Пустота" name="first-name">
+        </label>
+        <label class="name-inputs__label" for="patronymic">отчество:
+          <input class="name-input" type="text" placeholder="Викторович" name="patronymic">
+        </label>
+      </div>
+      <div class="contacts-form__wrapper">
+        <h2 class="contacts-inputs__title">
+          Контактная информация:
+        </h2>
+        <label class="contacts-inputs__label" for="phone" >
+          <input class="contact-input phone-input" type="number" placeholder="Введите телефон" name="phone">
+        </label>
+        <label class="contacts-inputs__label" for="email" >
+          <input class="contact-input email-input" type="email" placeholder="Введите e-mail" name="email">
+        </label>
+      </div>
+      <div class="impression-form__wrapper">
+        <h2 class="impression-input__title">
+          ВАше Общее впечатление:
+        </h2>
+          <input class="impression-input" type="radio" name="impression" checked>
+          <label class="impression-label" for="impression">Скорее положительное</label>
+          <input class="impression-input" type="radio" name="impression">
+          <label class="impression-label" for="impression">Скорее отрицательное</label>
+          <input class="impression-input" type="radio" name="impression" >
+          <label class="impression-label" for="impression">Затрудняюсь ответить</label>
+      </div>
+      <div class="attraction__wrapper">
+        <h2 class="attraction__title">посещенные достопримечательности:</h2>
+        <input class="attraction__input" type="checkbox" name="devils-bridge" checked>
+        <label class="attraction__label" for="devils-bridge" >Мост Дьявола</label>
+        <input class="attraction__input" type="checkbox" name="mountain" checked>
+        <label class="attraction__label" for="mountain" >Гора-Колокол</label>
+        <input class="attraction__input" type="checkbox" name="park" checked>
+        <label class="attraction__label" for="park" >Слайд-парк</label>
+        <input class="attraction__input" type="checkbox" name="red-rocks">
+        <label class="attraction__label" for="red-rocks" >Красные-Скалы</label>
+      </div>
+      <div class="emotions__wrapper">
+        <h2 class="emotions__title">Опишите свои эмоции:</h2>
+        <input class="emotions__input" type="text-area" name="your-emotions" placeholder="Опишите подробно все свои восторги ">
+        <label class="emotions__label" for="your-emotions"></label>
+      </div>
+      <div class="review-button__wrapper">
+        <button class="review-button button" type="submit">
+          <span class="review-button__text">ОТПРАВИТЬ ОТЗЫВ</span>
+        </button>
+      </div>
+    </form>
+  </section>
+  <footer class="page-footer">
+
+  </footer>
+</body>
+
+</html>
