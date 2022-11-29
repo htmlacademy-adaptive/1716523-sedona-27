@@ -44,7 +44,7 @@
     <p class="review-text">
       Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
     </p>
-    <form class="review-form" action="https://echo.htmlacademy.ru/"  method="post">
+    <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="name-form__wrapper">
         <h2 class="name-inputs__title">представьтесь:</h2>
         <label class="name-inputs__label" for="first-name">имя*:
@@ -61,10 +61,10 @@
         <h2 class="contacts-inputs__title">
           Контактная информация:
         </h2>
-        <label class="contacts-inputs__label" for="phone" >
+        <label class="contacts-inputs__label" for="phone">
           <input class="contact-input phone-input" type="number" placeholder="Введите телефон" name="phone">
         </label>
-        <label class="contacts-inputs__label" for="email" >
+        <label class="contacts-inputs__label" for="email">
           <input class="contact-input email-input" type="email" placeholder="Введите e-mail" name="email">
         </label>
       </div>
@@ -72,38 +72,108 @@
         <h2 class="impression-input__title">
           ВАше Общее впечатление:
         </h2>
-          <input class="impression-input" type="radio" name="impression" checked>
-          <label class="impression-label" for="impression">Скорее положительное</label>
-          <input class="impression-input" type="radio" name="impression">
-          <label class="impression-label" for="impression">Скорее отрицательное</label>
-          <input class="impression-input" type="radio" name="impression" >
-          <label class="impression-label" for="impression">Затрудняюсь ответить</label>
+        <input class="impression-input" type="radio" name="impression" checked>
+        <label class="impression-label" for="impression">Скорее положительное</label>
+        <input class="impression-input" type="radio" name="impression">
+        <label class="impression-label" for="impression">Скорее отрицательное</label>
+        <input class="impression-input" type="radio" name="impression">
+        <label class="impression-label" for="impression">Затрудняюсь ответить</label>
       </div>
       <div class="attraction__wrapper">
         <h2 class="attraction__title">посещенные достопримечательности:</h2>
         <input class="attraction__input" type="checkbox" name="devils-bridge" checked>
-        <label class="attraction__label" for="devils-bridge" >Мост Дьявола</label>
+        <label class="attraction__label" for="devils-bridge">Мост Дьявола</label>
         <input class="attraction__input" type="checkbox" name="mountain" checked>
-        <label class="attraction__label" for="mountain" >Гора-Колокол</label>
+        <label class="attraction__label" for="mountain">Гора-Колокол</label>
         <input class="attraction__input" type="checkbox" name="park" checked>
-        <label class="attraction__label" for="park" >Слайд-парк</label>
+        <label class="attraction__label" for="park">Слайд-парк</label>
         <input class="attraction__input" type="checkbox" name="red-rocks">
-        <label class="attraction__label" for="red-rocks" >Красные-Скалы</label>
+        <label class="attraction__label" for="red-rocks">Красные-Скалы</label>
       </div>
       <div class="emotions__wrapper">
         <h2 class="emotions__title">Опишите свои эмоции:</h2>
-        <input class="emotions__input" type="text-area" name="your-emotions" placeholder="Опишите подробно все свои восторги ">
+        <input class="emotions__input" type="text-area" name="your-emotions"
+          placeholder="Опишите подробно все свои восторги ">
         <label class="emotions__label" for="your-emotions"></label>
       </div>
       <div class="review-button__wrapper">
-        <button class="review-button button" type="submit">
+        <button class="review-button button-mobile" type="submit">
           <span class="review-button__text">ОТПРАВИТЬ ОТЗЫВ</span>
         </button>
       </div>
     </form>
   </section>
-  <footer class="page-footer">
+  <section class="mobile-modal__error">
+    <div class="mobile-error-text__wrapper">
+      <h2 class="error-text__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+      <p class="error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+    <button class="error-button" type="button">ок</button>
+  </section>
+  <section class="mobile-modal__success">
+    <div class="mobile-success-text__wrapper">
+      <h2 class="mobile-success__title">Ваш отзыв отправлен!</h2>
+      <p class="mobile-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+        опубликуем его на сайте.</p>
+    </div>
+    <div class="mobile-success-button__wrapper">
+      <button class="success-button button-mobile" type="button">закрыть окно</button>
+    </div>
+  </section>
 
+  <footer class="page-footer">
+    <h2 class="footer__title">#visitSEDONA</h2>
+    <ul class="footer-socials__list">
+      <li class="footer-socials__item">
+        <a class="footer-socials__link" href="#">
+          <svg class="foter-socials__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
+            viewBox="0 0 48 48">
+            <path fill="#81B3D2" d="M0 0h48v48H0z" />
+            <g clip-path="url(#a)">
+              <path fill="#fff" fill-rule="evenodd"
+                d="M35.45 17.948c.166-.546 0-.948-.795-.948H32.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738v-5.109c0-.656-.184-.948-.74-.948h-4.128c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885-.249-.715-.501-1.003-1.172-1.003H12.9c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551C18.315 29.341 21.37 31 24.153 31c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C31.11 30.216 31.403 31 32.405 31h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"
+                clip-rule="evenodd" />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M12 12h24v24H12z" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="footer-socials__item">
+        <a class="footer-socials__link" href="#">
+          <svg class="foter-socials__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
+            viewBox="0 0 48 48">
+            <path fill="#81B3D2" d="M0 0h48v48H0z" />
+            <path fill="#fff"
+              d="m34.44 16.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.558-2.33 2.242c-.258.258-.473.473-.97.473l.347-4.917 8.948-8.086c.39-.346-.084-.54-.604-.192l-11.063 6.966-4.762-1.491c-1.036-.323-1.055-1.036.216-1.533l18.627-7.177c.863-.323 1.617.192 1.336 1.51Z" />
+          </svg>
+          <span class="visually-hidden">Телеграмм</span>
+        </a>
+      </li>
+      <li class="footer-socials__item">
+        <a class="footer-socials__link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
+            <path fill="#81B3D2" d="M0 0h48v48H0z" />
+            <path fill="#fff"
+              d="M31.181 17H16.813C15.306 17 14 18.3 14 19.8v8.3c0 1.6 1.306 2.9 2.813 2.9h14.368c1.608 0 2.814-1.3 2.814-2.8v-8.4c.1-1.5-1.206-2.8-2.814-2.8ZM21.033 27.4v-6.8l6.833 3.4-6.833 3.4Z" />
+          </svg>
+          <span class="visually-hidden">you-tube</span>
+        </a>
+      </li>
+    </ul>
+    <div class="footer-copyright__wrapper">
+      <a class="copyright-link" href="#" >разработано
+        <svg class="footer-copyright__logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none"
+          viewBox="0 0 27 35">
+          <path fill="#000"
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+        </svg>
+      </a>
+    </div>
   </footer>
 </body>
 
