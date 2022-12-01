@@ -54,7 +54,7 @@
     </p>
     <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="review-form__wrapper name-inputs">
-        <h2 class="review-form__title">представьтесь:</h2>
+        <h2 class="review-form__title name-inputs__title">представьтесь:</h2>
         <label class="review-form__label input-label" for="first-name">имя*:
           <input class="review-form__input first-name-input" type="text" placeholder="Петр" name="first-name">
         </label>
@@ -65,67 +65,67 @@
           <input class="review-form__input patronymic-input" type="text" placeholder="Викторович" name="patronymic">
         </label>
       </div>
-      <div class="contacts-form__wrapper">
-        <h2 class="contacts-inputs__title">
+      <div class="review-form__wrapper contacts-inputs">
+        <h2 class="review-form__title contacts-inputs__title">
           Контактная информация:
         </h2>
-        <label class="contacts-inputs__label" for="phone">
-          <input class="contact-input phone-input" type="number" placeholder="Введите телефон" name="phone">
+        <label class="review-form__label contacts-inputs__label" for="phone">
+          <input class="review-form__input contact-input phone-input" type="number" placeholder="Введите телефон" name="phone">
         </label>
         <label class="contacts-inputs__label" for="email">
-          <input class="contact-input email-input" type="email" placeholder="Введите e-mail" name="email">
+          <input class="review-form__input contact-input email-input" type="email" placeholder="Введите e-mail" name="email">
         </label>
       </div>
-      <div class="impression-form__wrapper">
-        <h2 class="impression-input__title">
-          ВАше Общее впечатление:
+      <div class="review-form__wrapper impression-inputs">
+        <h2 class="review-form__title impression-inputs__title">
+          Ваше общее впечатление:
         </h2>
-        <input class="impression-input" type="radio" name="impression" checked>
-        <label class="impression-label" for="impression">Скорее положительное</label>
-        <input class="impression-input" type="radio" name="impression">
-        <label class="impression-label" for="impression">Скорее отрицательное</label>
-        <input class="impression-input" type="radio" name="impression">
-        <label class="impression-label" for="impression">Затрудняюсь ответить</label>
+        <input class="review-form__input impression-input" type="radio" name="impression"  value="положительное" checked>
+        <label class="review-form__label impression-label" for="impression">Скорее положительное</label>
+        <input class="review-form__input impression-input" type="radio" name="impression" value="отрицательное">
+        <label class="review-form__label impression-label" for="impression">Скорее отрицательное</label>
+        <input class="review-form__input impression-input" type="radio" name="impression" value="затрудняюсь">
+        <label class="review-form__label impression-label" for="impression">Затрудняюсь ответить</label>
       </div>
-      <div class="attraction__wrapper">
-        <h2 class="attraction__title">посещенные достопримечательности:</h2>
-        <input class="attraction__input" type="checkbox" name="devils-bridge" checked>
-        <label class="attraction__label" for="devils-bridge">Мост Дьявола</label>
-        <input class="attraction__input" type="checkbox" name="mountain" checked>
-        <label class="attraction__label" for="mountain">Гора-Колокол</label>
-        <input class="attraction__input" type="checkbox" name="park" checked>
-        <label class="attraction__label" for="park">Слайд-парк</label>
-        <input class="attraction__input" type="checkbox" name="red-rocks">
-        <label class="attraction__label" for="red-rocks">Красные-Скалы</label>
+      <div class="review-form__wrapper attraction-inputs">
+        <h2 class="review-form__title attraction-title">посещенные достопримечательности:</h2>
+        <input class="review-form__input attraction-input" type="checkbox" name="devils-bridge" checked>
+        <label class="review-form__label attraction-label" for="devils-bridge">Мост Дьявола</label>
+        <input class="review-form__input attraction-input" type="checkbox" name="mountain" checked>
+        <label class="review-form__label attraction-label" for="mountain">Гора-Колокол</label>
+        <input class="review-form__input attraction-input" type="checkbox" name="park" checked>
+        <label class="review-form__label attraction-label" for="park">Слайд-парк</label>
+        <input class="review-form__input attraction-input" type="checkbox" name="red-rocks">
+        <label class="review-form__label attraction-label" for="red-rocks">Красные-Скалы</label>
       </div>
-      <div class="emotions__wrapper">
-        <h2 class="emotions__title">Опишите свои эмоции:</h2>
-        <input class="emotions__input" type="text-area" name="your-emotions"
+      <div class="review-form__wrapper emotions-inputs">
+        <h2 class="review-form__title emotions-title">Опишите свои эмоции:</h2>
+        <input class="review-form__input emotions-input" type="text-area" name="your-emotions"
           placeholder="Опишите подробно все свои восторги ">
-        <label class="emotions__label" for="your-emotions"></label>
+        <label class="review-form__label emotions-label" for="your-emotions"></label>
       </div>
-      <div class="review-button__wrapper">
-        <button class="review-button button-mobile" type="submit">
-          <span class="review-button__text">отправить отзыв</span>
+      <div class="review-form__button-wrapper">
+        <button class="review-form__button button-mobile" type="submit">
+          <span class="review-form__button-text">отправить отзыв</span>
         </button>
       </div>
     </form>
   </section>
-  <section class="mobile-modal__error">
-    <div class="mobile-error-text__wrapper">
-      <h2 class="error-text__title">что-то пошло не так!</h2>
-      <p class="error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <section class="mobile-modal modal-error">
+    <div class="mobile-modal__text-wrapper">
+      <h2 class="mobile-modal__title modal-error__title">что-то пошло не так!</h2>
+      <p class="mobile-modal__text modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </div>
-    <button class="error-button" type="button">ок</button>
+    <button class="mobile-modal__button modal-error__button" type="button">ок</button>
   </section>
-  <section class="mobile-modal__success">
-    <div class="mobile-success-text__wrapper">
-      <h2 class="mobile-success__title">Ваш отзыв отправлен!</h2>
-      <p class="mobile-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+  <section class="mobile-modal modal-success">
+    <div class="mobile-modal__text-wrapper ">
+      <h2 class="mobile-modal__title modal-success__title">Ваш отзыв отправлен!</h2>
+      <p class="mobile-modal__text modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
         опубликуем его на сайте.</p>
     </div>
-    <div class="mobile-success-button__wrapper">
-      <button class="success-button button-mobile" type="button">закрыть окно</button>
+    <div class="mobile-modal__button-wrapper">
+      <button class="mobile-modal__button success-button button-mobile" type="button">закрыть окно</button>
     </div>
   </section>
 
