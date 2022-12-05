@@ -1,0 +1,13 @@
+@import "./constants/screen-size.scss";
+
+.main-header {
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    position: relative;
+    justify-content: end;
+
+    &__logo {
+      position: absolute;
+    }
+  }
+}
