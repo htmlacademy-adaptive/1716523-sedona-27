@@ -3,9 +3,12 @@
 @import "./main-header.scss";
 @import "./constants/screen-size.scss";
 @import "./fonts.scss";
+@import "./visually-hidden.scss";
+@import "./main-nav.scss";
 
 body {
   background: rgb(255, 255, 255);
+  margin: 0;
 }
 
 .page__body {
@@ -23,6 +26,7 @@ body {
 
   @media screen and (min-width: $desktop) {
     min-width: $desktop;
+    margin: 0;
   }
 }
 
