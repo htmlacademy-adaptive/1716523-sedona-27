@@ -1,13 +1,14 @@
 // Начните писать стили здесь
 
-@import "./main-header.scss";
+@import "./common-styles/main-header.scss";
 @import "./constants/screen-size.scss";
-@import "./fonts.scss";
-@import "./visually-hidden.scss";
-@import "./main-nav.scss";
-@import "./hero.scss";
-@import "./advantages.scss";
-@import "./footer.scss";
+@import "./common-styles/fonts.scss";
+@import "./common-styles/visually-hidden.scss";
+@import "./common-styles/main-nav.scss";
+@import "./index/hero.scss";
+@import "./index/advantages.scss";
+@import "./common-styles/footer.scss";
+@import "./index/search.scss";
 
 body {
   background: rgb(255, 255, 255);
@@ -16,7 +17,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   padding: 0;
   font-family: inherit;
