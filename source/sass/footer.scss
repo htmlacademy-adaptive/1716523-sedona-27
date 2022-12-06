@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 29px;
+  padding-bottom: 23px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 6px;
+  }
+
+  &__copyright-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__copyright-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 1);
+    margin-right: 14px;
+    text-transform: uppercase;
+  }
+}

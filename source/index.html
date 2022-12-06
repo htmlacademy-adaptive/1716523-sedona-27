@@ -12,13 +12,12 @@
 <body class="page__body">
   <header class="main-header">
     <a href="index.html" class="main-header__logo logo">
-      <img src="img/header-logo.svg" alt="Логотип города Седона." class="main-header__logo-img" width="185"
-        height="96">
+      <img src="img/header-logo.svg" alt="Логотип города Седона." class="main-header__logo-img" width="185" height="96">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle">
         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none" viewBox="0 0 23 22">
-          <path fill="#81B3D2" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
+          <path fill="#81B3D2" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
         </svg>
         <span class="visually-hidden">кнопка вызова меню навигации</span>
       </button>
@@ -27,6 +26,11 @@
           <li class="main-nav__menu-item">
             <a href="index.html" class="menu-link">главная</a>
             <button class="close-button">
+              <svg class="close-button-svg" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none"
+                viewBox="0 0 23 23">
+                <path fill="#fff"
+                  d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" />
+              </svg>
               <span class="visually-hidden">закрыть</span>
             </button>
           </li>
@@ -48,67 +52,69 @@
       <img class="hero__img" src="img/hero-img-title-mobile.svg"
         alt="welcome to the georgeous Sedona, because the Grand Canyon sucks!." width="282" height="214">
     </div>
-    <h1 class="hero__title">
-      седона — небольшой городок в аризоне, заслуживающий большего!
+    <h1 class="hero__title text">
+      седона — небольшой<br>городок в аризоне,<br>заслуживающий большего!
     </h1>
   </section>
   <section class="advantages">
-    <h2 class="advantages__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+    <h2 class="advantages__title text">Рассмотрим 5 причин, по которым<br>Седона круче, чем гранд каньон!</h2>
     <ol class="advantages__list">
       <li class="advantages__item">
         <div class="advantages__item-wrapper true-city">
-          <h3 class="advantages__item-title">настоящий городок</h3>
-          <span class="advantages__item-text">седона не аттракцион для туристов, там течет своя жизнь</span>
-          <img class="advantages__item-img" src="img/true-city-mobile.jpg" alt="фотография города Седона"
-            width="320" height="260">
+          <div class="true-city__wrapper">
+            <h3 class="advantages__item-title advantages__item-title--number-one text">настоящий городок</h3>
+            <span class="advantages__item-text">седона не аттракцион для туристов, там течет своя жизнь</span>
+          </div>
+          <img class="advantages__item-img" src="img/true-city-mobile.jpg" alt="фотография города Седона" width=""
+            height="260">
         </div>
         <div class="benefits">
           <div class="benefits__item housing">
-            <h4 class="benefits__title">жильё</h4>
+            <h4 class="benefits__title text">жильё</h4>
             <span class="benefits__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
           </div>
           <div class="benefits__item food">
-            <h4 class="benefits__title">еда</h4>
+            <h4 class="benefits__title text">еда</h4>
             <span class="benefits__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
           </div>
           <div class="benefits__item souvenirs">
-            <h4 class="benefits__title">сувениры</h4>
+            <h4 class="benefits__title text">сувениры</h4>
             <span class="benefits__text">Не только китайского, но и местного производства!</span>
           </div>
         </div>
       </li>
       <li class="advantages__item">
         <div class="advantages__item-wrapper devils-bridge">
-          <h3 class="advantages__item-title">там есть мост дьявола</h3>
+          <h3 class="advantages__item-title text">там есть мост дьявола</h3>
           <span class="advantages__item-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</span>
-          <img class="advantages__item-img" src="img/devils-bridge-mobile.jpg" alt="фотография моста дьявола"
-            width="320" height="260">
+          <img class="advantages__item-img" src="img/devils-bridge-mobile.jpg" alt="фотография моста дьявола" width=""
+            height="260">
         </div>
       </li>
       <li class="advantages__item">
-        <h3 class="advantages__item-title">небольшая площадь</h3>
+        <h3 class="advantages__item-title text">небольшая площадь</h3>
         <span class="advantages__item-text">все интересные места находятся очень близко</span>
       </li>
       <li class="advantages__item">
-        <h3 class="advantages__item-title">красивая дорога</h3>
+        <h3 class="advantages__item-title text">красивая дорога</h3>
         <span class="advantages__item-text">ехать в седону из лас-вегаса совсем не скучно!</span>
       </li>
       <li class="advantages__item">
-        <h3 class="advantages__item-title">мало туристов</h3>
+        <h3 class="advantages__item-title text">мало туристов</h3>
         <span class="advantages__item-text">большинство едет в гранд каньон и толпится там</span>
       </li>
     </ol>
   </section>
   <section class="search">
-    <h2 class="search__title">заинтересовались?</h2>
+    <h2 class="search__title text">заинтересовались?</h2>
     <span class="search__text">укажите укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
       в седоне</span>
     <button class="search__button button" type="button">найти гостиницу</button>
-    <img class="search-map" src="img/map-mobile.jpg" alt="карта седоны"  width="320" height="350">
+    <img class="search-map" src="img/map-mobile.jpg" alt="карта седоны" width="" height="350">
   </section>
 
   <footer class="footer">
-    <h2 class="footer__title">#visitsedona</h2>
+    <h2 class="footer__title text">#visitsedona</h2>
     <ul class="footer__list socials">
       <li class="footer__item">
         <a class="footer__link" href="#">
@@ -142,7 +148,8 @@
       </li>
       <li class="footer__item">
         <a class="footer__link" href="#">
-          <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
+          <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
+            viewBox="0 0 48 48">
             <path fill="#81B3D2" d="M0 0h48v48H0z" />
             <path fill="#fff"
               d="M31.181 17H16.813C15.306 17 14 18.3 14 19.8v8.3c0 1.6 1.306 2.9 2.813 2.9h14.368c1.608 0 2.814-1.3 2.814-2.8v-8.4c.1-1.5-1.206-2.8-2.814-2.8ZM21.033 27.4v-6.8l6.833 3.4-6.833 3.4Z" />
@@ -152,13 +159,13 @@
       </li>
     </ul>
     <div class="footer__copyright-wrapper">
-      <a class="footer__copyright-link" href="#" >разработано
-        <svg class="footer__copyright-logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none"
-          viewBox="0 0 27 35">
-          <path fill="#000"
-            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
-        </svg>
+      <a class="footer__copyright-link" href="#">разработано
       </a>
+      <svg class="footer__copyright-logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none"
+      viewBox="0 0 27 35">
+      <path fill="#000"
+        d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+    </svg>
     </div>
   </footer>
 

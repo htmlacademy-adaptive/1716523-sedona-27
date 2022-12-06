@@ -5,10 +5,34 @@
 @import "./fonts.scss";
 @import "./visually-hidden.scss";
 @import "./main-nav.scss";
+@import "./hero.scss";
+@import "./advantages.scss";
+@import "./footer.scss";
 
 body {
   background: rgb(255, 255, 255);
   margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .page__body {
@@ -28,6 +52,10 @@ body {
     min-width: $desktop;
     margin: 0;
   }
+}
+
+.text {
+  text-transform: uppercase;
 }
 
 // @media screen and (min-width: $mobile) {
