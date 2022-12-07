@@ -9,6 +9,8 @@
 @import "./index/advantages.scss";
 @import "./common-styles/footer.scss";
 @import "./index/search.scss";
+@import "./constants/colors.scss";
+@import "./catalog/products-mobile.scss";
 
 body {
   background: rgb(255, 255, 255);
@@ -54,6 +56,10 @@ a {
     min-width: $desktop;
     margin: 0;
   }
+}
+
+.button {
+  border: none;
 }
 
 .text {
