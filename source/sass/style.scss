@@ -12,6 +12,8 @@
 @import "./constants/colors.scss";
 @import "./catalog/products-mobile.scss";
 @import "./catalog/catalog-hero.scss";
+@import "./form/form-hero.scss";
+@import "./form/review.scss";
 
 body {
   background: rgb(255, 255, 255);
@@ -38,6 +40,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 .page__body {
