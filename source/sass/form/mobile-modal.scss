@@ -1,0 +1,35 @@
+.mobile-modal {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.modal-error {
+  min-height: 280px;
+}
+
+.modal-success {
+  min-height: 323px;
+}
+
+.error-text-wrapper {
+  padding: 45px 42px 28px 41px;
+}
+
+.success-text-wrapper {
+  padding: 39px 38px 30px 38px;
+}

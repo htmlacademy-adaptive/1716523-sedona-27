@@ -21,10 +21,14 @@
       font-weight: 400;
       line-height: 21px;
       text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
     }
   }
 
   &__title-wrapper {
     padding: 36px 0 28px 0;
   }
+
+
 }
