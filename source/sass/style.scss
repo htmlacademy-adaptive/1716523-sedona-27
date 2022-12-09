@@ -5,16 +5,16 @@
 @import "./common-styles/fonts.scss";
 @import "./common-styles/visually-hidden.scss";
 @import "./common-styles/main-nav.scss";
-@import "./index/hero.scss";
-@import "./index/advantages.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/advantages.scss";
 @import "./common-styles/footer.scss";
-@import "./index/search.scss";
+@import "./blocks/search.scss";
 @import "./constants/colors.scss";
-@import "./catalog/products-mobile.scss";
-@import "./catalog/catalog-hero.scss";
-@import "./form/form-hero.scss";
-@import "./form/review.scss";
-@import "./form/mobile-modal.scss";
+@import "./blocks/products-mobile.scss";
+@import "./blocks/catalog-hero.scss";
+@import "./blocks/form-hero.scss";
+@import "./blocks/review.scss";
+@import "./blocks/mobile-modal.scss";
 
 body {
   background: rgb(255, 255, 255);
