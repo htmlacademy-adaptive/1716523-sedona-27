@@ -52,7 +52,7 @@
   padding-top: 17px;
 }
 .main-nav__wrapper {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -335,7 +335,7 @@
 }
 
 .catalog-hero__wrapper {
-  background-image: url(../../img/hero-image-mobile.jpg);
+  background-image: url("../../img/hero-image-mobile.jpg");
   background-size: cover;
   background-color: #81b3d2;
   background-position-y: 200px;
@@ -347,7 +347,7 @@
 }
 
 .form-hero__wrapper {
-  background-image: url(../../img/hero-image-mobile.jpg);
+  background-image: url("../../img/hero-image-mobile.jpg");
   background-size: cover;
   background-color: #81b3d2;
   background-position-y: 200px;
@@ -378,9 +378,45 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }
 .review__title-wrapper {
   padding: 36px 0 28px 0;
+}
+
+.mobile-modal {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-modal__title {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.mobile-modal__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.modal-error {
+  min-height: 280px;
+}
+
+.modal-success {
+  min-height: 323px;
+}
+
+.error-text-wrapper {
+  padding: 45px 42px 28px 41px;
+}
+
+.success-text-wrapper {
+  padding: 39px 38px 30px 38px;
 }
 
 body {
