@@ -1,0 +1,13 @@
+.form-hero {
+  &__wrapper {
+    background-image: url("../../img/hero-image-mobile.jpg");
+    background-size: cover;
+    background-color: $advantages-blue;
+    background-position-y: 200px;
+    min-height: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

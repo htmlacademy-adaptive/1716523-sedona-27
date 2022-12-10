@@ -1,0 +1,18 @@
+@import "./constants/screen-size.scss";
+
+.main-header {
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    min-height: 56px;
+
+    &__logo {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

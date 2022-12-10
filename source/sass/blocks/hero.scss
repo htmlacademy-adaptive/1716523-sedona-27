@@ -1,0 +1,19 @@
+.hero__img-wrapper {
+  background-image: url("../img/hero-image-mobile.jpg");
+  background-color: rgb(129, 179, 210);
+  background-size: cover;
+}
+
+.hero__img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.hero__title {
+  font-size: 18px;
+  font-weight: 700px;
+  line-height: 26px;
+  padding: 32px 18px 35px 18px;
+  text-align: center;
+}

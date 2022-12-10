@@ -1,1 +1,97 @@
 // Начните писать стили здесь
+
+@import "./common-styles/main-header.scss";
+@import "./constants/screen-size.scss";
+@import "./common-styles/fonts.scss";
+@import "./common-styles/visually-hidden.scss";
+@import "./common-styles/main-nav.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/advantages.scss";
+@import "./common-styles/footer.scss";
+@import "./blocks/search.scss";
+@import "./constants/colors.scss";
+@import "./blocks/products-mobile.scss";
+@import "./blocks/catalog-hero.scss";
+@import "./blocks/form-hero.scss";
+@import "./blocks/review.scss";
+@import "./blocks/mobile-modal.scss";
+
+body {
+  background: rgb(255, 255, 255);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.page__body {
+  @media screen and (min-width: $mobile) {
+    min-width: $mobile;
+    max-width: $tablet;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-width: $tablet;
+    max-width: $desktop;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: $desktop;
+    margin: 0;
+  }
+}
+
+.button {
+  border: none;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+// @media screen and (min-width: $mobile) {
+//   .page__body {
+//     min-width: $mobile;
+//     max-width: $tablet;
+//     margin: 0 auto;
+//   }
+// }
+
+// @media screen and (min-width: $tablet) {
+//   .page__body {
+//     min-width: $tablet;
+//     max-width: $desktop;
+//     margin: 0 auto;
+//   }
+// }
+
+@media screen and (min-width: $desktop) {
+  .page__body {
+    min-width: $desktop;
+  }
+}
