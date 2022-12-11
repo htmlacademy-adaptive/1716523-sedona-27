@@ -14,13 +14,18 @@
     background-color: $advantages-grey;
   }
 
-  &__item-wrapper--border-bottom {
-    min-height: inherit;
-    width: 284px;
-    padding: 24px 26px 24px 26px;
-    border-bottom: 1px solid rgb(214, 214, 214);
-    box-sizing: border-box;
+  &__item-list {
+    display: flex;
+    flex-direction: column;
   }
+
+  // &__item-wrapper--border-bottom {
+  //   min-height: inherit;
+  //   width: 284px;
+  //   padding: 24px 26px 24px 26px;
+  //   border-bottom: 1px solid rgb(214, 214, 214);
+  //   box-sizing: border-box;
+  // }
 
   &__item-text {
     font-size: 14px;
@@ -29,41 +34,61 @@
     text-transform: uppercase;
   }
 
-  &__item-title--number-three::after {
-    content: "— №3 —";
-    display: block;
-    padding: 11px 0 17px 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-  }
-
-  &__item-title--number-four::after {
-    content: "— №4 —";
-    display: block;
-    padding: 11px 0 17px 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-  }
-
-  &__item-title--number-five::after {
-    content: "— №5 —";
-    display: block;
-    padding: 11px 0 17px 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-  }
-
   @media screen and (min-width: $tablet) {
     &__list {
+      display: grid;
+      grid-template-areas:
+        "adv1 adv1 adv1"
+        "adv1 adv1 adv1"
+        "adv2 adv2 adv2"
+        "adv3 adv4 adv5";
+    }
+
+    .adv1 {
+      grid-area: adv1;
+    }
+
+    .adv2 {
+      grid-area: adv2;
+    }
+
+    .adv3 {
+      grid-area: adv3;
+    }
+
+    .adv4 {
+      grid-area: adv4;
+    }
+
+    .adv5 {
+      grid-area: adv5;
+    }
+
+    .true-city,
+    .devils-bridge {
       display: flex;
       flex-wrap: wrap;
     }
 
+    &__item {
+      min-width: 256px;
+    }
+
     .benefits {
       display: flex;
+      flex-wrap: wrap;
+
+      &__item {
+        box-sizing: border-box;
+        min-width: 256px;
+        min-height: 331px;
+        padding: 158px 33px 60px 33px;
+        outline: 1px solid red;
+      }
+
+      &__text-wrapper {
+        width: 190px;
+      }
     }
   }
 }
@@ -77,11 +102,6 @@
   padding: 0 18px 16px 18px;
 }
 
-.advantages__item-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .true-city__wrapper {
   background-color: rgba(129, 179, 210, 1);
   color: rgb(255, 255, 255);
@@ -92,9 +112,6 @@
 .advantages__item-title--number-one::after {
   content: "— №1 —";
   display: block;
-  // background-image: url(../img/true-city-number-icon.svg);
-  // background-repeat: no-repeat;
-  // background-position: center;
   padding: 11px 0 17px 0;
   font-size: 14px;
   font-weight: 400;
@@ -106,13 +123,4 @@
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 54px 18px 40px 18px;
-}
-
-.advantages__item-title--number-two::after {
-  content: "— №2 —";
-  display: block;
-  padding: 11px 0 17px 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
 }
