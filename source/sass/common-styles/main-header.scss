@@ -4,7 +4,7 @@
   @media screen and (min-width: $mobile) {
     display: flex;
     position: relative;
-    justify-content: end;
+    justify-content: flex-end;
     min-height: 56px;
 
     &__logo {
@@ -14,5 +14,10 @@
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: flex-start;
   }
 }
