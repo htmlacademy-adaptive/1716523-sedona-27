@@ -55,6 +55,17 @@
     font-weight: 400;
     line-height: 21px;
   }
+
+  @media screen and (min-width: $tablet) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .benefits {
+      display: flex;
+    }
+  }
 }
 
 .advantages__title {
