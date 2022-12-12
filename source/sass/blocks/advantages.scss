@@ -36,33 +36,38 @@
 
   @media screen and (min-width: $tablet) {
     &__list {
-      display: grid;
-      grid-template-areas:
-        "adv1 adv1 adv1"
-        "adv1 adv1 adv1"
-        "adv2 adv2 adv2"
-        "adv3 adv4 adv5";
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
+    // &__list {
+    //   display: grid;
+    //   grid-template-areas:
+    //     "adv1 adv1 adv1"
+    //     "adv1 adv1 adv1"
+    //     "adv2 adv2 adv2"
+    //     "adv3 adv4 adv5";
+    // }
 
-    .adv1 {
-      grid-area: adv1;
-    }
+    // .adv1 {
+    //   grid-area: adv1;
+    // }
 
-    .adv2 {
-      grid-area: adv2;
-    }
+    // .adv2 {
+    //   grid-area: adv2;
+    // }
 
-    .adv3 {
-      grid-area: adv3;
-    }
+    // .adv3 {
+    //   grid-area: adv3;
+    // }
 
-    .adv4 {
-      grid-area: adv4;
-    }
+    // .adv4 {
+    //   grid-area: adv4;
+    // }
 
-    .adv5 {
-      grid-area: adv5;
-    }
+    // .adv5 {
+    //   grid-area: adv5;
+    // }
 
     .true-city,
     .devils-bridge {
@@ -71,7 +76,7 @@
     }
 
     &__item {
-      min-width: 256px;
+      min-width: 257px;
     }
 
     .benefits {
