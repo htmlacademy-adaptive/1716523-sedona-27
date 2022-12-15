@@ -1,22 +1,25 @@
 @import "../constants/colors.scss";
 
 .advantages {
+  &__list {
+    width: 100%;
+  }
+
   &__item {
     min-width: 284px;
     min-height: 167px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
   }
 
   &__item--another-bcg-color {
     background-color: $advantages-grey;
   }
 
-  &__item-list {
-    display: flex;
-    flex-direction: column;
+  &__item-img {
+    background-color: rgb(237, 191, 180);
   }
 
   // &__item-wrapper--border-bottom {
@@ -34,40 +37,44 @@
     text-transform: uppercase;
   }
 
+  &__item-wrapper {
+    width: 100%;
+  }
+
   @media screen and (min-width: $tablet) {
-    // &__list {
-    //   display: flex;
-    //   flex-wrap: wrap;
-    //   justify-content: center;
-    // }
     &__list {
-      display: grid;
-      grid-template-areas:
-        "adv1 adv1 adv1"
-        "adv1 adv1 adv1"
-        "adv2 adv2 adv2"
-        "adv3 adv4 adv5";
+      display: flex;
+      flex-direction: column;
+      width: 100%;
     }
+    // &__list {
+    //   display: grid;
+    //   grid-template-areas:
+    //     "adv1 adv1 adv1"
+    //     "adv1 adv1 adv1"
+    //     "adv2 adv2 adv2"
+    //     "adv3 adv4 adv5";
+    // }
 
-    .adv1 {
-      grid-area: adv1;
-    }
+    // .adv1 {
+    //   grid-area: adv1;
+    // }
 
-    .adv2 {
-      grid-area: adv2;
-    }
+    // .adv2 {
+    //   grid-area: adv2;
+    // }
 
-    .adv3 {
-      grid-area: adv3;
-    }
+    // .adv3 {
+    //   grid-area: adv3;
+    // }
 
-    .adv4 {
-      grid-area: adv4;
-    }
+    // .adv4 {
+    //   grid-area: adv4;
+    // }
 
-    .adv5 {
-      grid-area: adv5;
-    }
+    // .adv5 {
+    //   grid-area: adv5;
+    // }
 
     .true-city,
     .devils-bridge {
@@ -75,21 +82,24 @@
       flex-wrap: wrap;
     }
 
-    &__item {
-      min-width: 257px;
-    }
-
     &__item-wrapper {
-      min-width: 190px;
+      width: 100%;
     }
 
     &__text-wrapper {
       padding: 52px 33px 52px 33px;
+      flex-grow: 1;
     }
 
-    .benefits {
+    &__item--another-bcg-color {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+
+    .benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
 
       &__item {
         box-sizing: border-box;
