@@ -28,15 +28,41 @@
   }
 
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $button-blue;
     color: rgb(255, 255, 255);
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
-    padding: 16px 49px 16px 49px;
     min-width: 284px;
     min-height: 58px;
     margin-bottom: 49px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $button-blue;
+      color: rgb(255, 255, 255);
+      font-size: 21 px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+      min-width: 454px;
+      min-height: 58px;
+      margin-bottom: 49px;
+    }
+
+    &__title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 26px;
+      padding-bottom: 20px;
+    }
   }
 }

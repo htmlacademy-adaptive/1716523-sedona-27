@@ -67,14 +67,14 @@
     <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="review-form__wrapper name-inputs">
         <h2 class="review-form__title name-inputs__title text">представьтесь:</h2>
-        <label class="review-form__label input-label" for="first-name">имя*:
-          <input class="review-form__input first-name-input" type="text" placeholder="Петр" name="first-name">
+        <label class="review-form__label input-label" for="name">имя*:
+          <input class="review-form__input first-name-input" type="text" placeholder="Петр" name="first-name" id="name">
         </label>
-        <label class="review-form__label" for="lastst-name">фамилия*:
-          <input class="review-form__input last-name-input" type="text" placeholder="Пустота" name="last-name">
+        <label class="review-form__label" for="last-name">фамилия*:
+          <input class="review-form__input last-name-input" type="text" placeholder="Пустота" name="second-name" id="last-name">
         </label>
         <label class="review-form__label" for="patronymic">отчество:
-          <input class="review-form__input patronymic-input" type="text" placeholder="Викторович" name="patronymic">
+          <input class="review-form__input patronymic-input" type="text" placeholder="Викторович" name="fathers-name" id="patronymic">
         </label>
       </div>
       <div class="review-form__wrapper contacts-inputs">
@@ -82,43 +82,42 @@
           Контактная информация:
         </h2>
         <label class="review-form__label contacts-inputs__label" for="phone">
-          <input class="review-form__input contact-input phone-input" type="number" placeholder="Введите телефон" name="phone">
+          <input class="review-form__input contact-input phone-input" type="number" placeholder="Введите телефон" id="phone" name="tel">
         </label>
         <label class=" review-form__label contacts-inputs__label" for="email">
-          <input class="review-form__input contact-input email-input" type="email" placeholder="Введите e-mail" name="email">
+          <input class="review-form__input contact-input email-input" type="email" placeholder="Введите e-mail" id="email" name="mail">
         </label>
       </div>
       <div class="review-form__wrapper impression-inputs">
         <h2 class="review-form__title impression-inputs__title text">
           Ваше общее впечатление:
         </h2>
-        <input class="review-form__input impression-input" type="radio" name="impression"  value="положительное" checked>
-        <label class="review-form__label impression-label" for="impression">Скорее положительное</label>
-        <input class="review-form__input impression-input" type="radio" name="impression" value="отрицательное">
-        <label class="review-form__label impression-label" for="impression">Скорее отрицательное</label>
-        <input class="review-form__input impression-input" type="radio" name="impression" value="затрудняюсь">
-        <label class="review-form__label impression-label" for="impression">Затрудняюсь ответить</label>
+        <input class="review-form__input impression-input" type="radio" name="impression" id="positive" value="положительное" checked>
+        <label class="review-form__label impression-label" for="positive">Скорее положительное</label>
+        <input class="review-form__input impression-input" type="radio" name="impression" id="negative" value="отрицательное">
+        <label class="review-form__label impression-label" for="negative">Скорее отрицательное</label>
+        <input class="review-form__input impression-input" type="radio" name="impression" id="difficult" value="затрудняюсь">
+        <label class="review-form__label impression-label" for="difficult">Затрудняюсь ответить</label>
       </div>
       <div class="review-form__wrapper attraction-inputs">
         <h2 class="review-form__title attraction-title text">посещенные достопримечательности:</h2>
-        <input class="review-form__input attraction-input" type="checkbox" name="devils-bridge" checked>
+        <input class="review-form__input attraction-input" type="checkbox" name="bridge" id="devils-bridge" checked>
         <label class="review-form__label attraction-label" for="devils-bridge">Мост Дьявола</label>
-        <input class="review-form__input attraction-input" type="checkbox" name="mountain" checked>
+        <input class="review-form__input attraction-input" type="checkbox" name="mountain-bell" id="mountain" checked>
         <label class="review-form__label attraction-label" for="mountain">Гора-Колокол</label>
-        <input class="review-form__input attraction-input" type="checkbox" name="park" checked>
+        <input class="review-form__input attraction-input" type="checkbox" name="park" id="park" checked>
         <label class="review-form__label attraction-label" for="park">Слайд-парк</label>
-        <input class="review-form__input attraction-input" type="checkbox" name="red-rocks">
+        <input class="review-form__input attraction-input" type="checkbox" name="rocks" id="red-rocks">
         <label class="review-form__label attraction-label" for="red-rocks">Красные-Скалы</label>
       </div>
       <div class="review-form__wrapper emotions-inputs">
         <h2 class="review-form__title emotions-title text">Опишите свои эмоции:</h2>
-        <input class="review-form__input emotions-input" type="text-area" name="your-emotions"
-          placeholder="Опишите подробно все свои восторги ">
+        <textarea class="review-form__input emotions-textarea" name="emotions" id="your-emotions"
+          placeholder="Опишите подробно все свои восторги "></textarea>
         <label class="review-form__label emotions-label" for="your-emotions"></label>
       </div>
       <div class="review-form__button-wrapper">
-        <button class="review-form__button button-mobile" type="submit">
-          <span class="review-form__button-text">отправить отзыв</span>
+        <button class="review-form__button button-mobile button" type="submit">отправить отзыв
         </button>
       </div>
     </form>
