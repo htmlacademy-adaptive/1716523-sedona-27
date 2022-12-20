@@ -51,44 +51,61 @@
     <h2 class="review__title mobile-title text">
       Оставьте свой отзыв
     </h2>
-    <p class="review-text mobile-text">
+    <p class="review__text mobile-text">
       Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
     </p>
   </div>
     <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="review-form__wrapper name-inputs">
         <h2 class="review-form__title name-inputs__title text">представьтесь:</h2>
-        <label class="review-form__label input-label" for="name">имя*:
-          <input class="review-form__input first-name-input" type="text" placeholder="Петр" name="first-name" id="name">
-        </label>
-        <label class="review-form__label" for="last-name">фамилия*:
-          <input class="review-form__input last-name-input" type="text" placeholder="Пустота" name="second-name" id="last-name">
-        </label>
-        <label class="review-form__label" for="patronymic">отчество:
-          <input class="review-form__input patronymic-input" type="text" placeholder="Викторович" name="fathers-name" id="patronymic">
-        </label>
+        <label class="review-form__label input-label" for="name">имя*:</label>
+          <input class="review-form__input first-name-input" type="text" value="Петр" name="first-name" id="name">
+
+        <label class="review-form__label" for="last-name">фамилия*:</label>
+          <input class="review-form__input last-name-input" type="text" value="Пустота" name="second-name" id="last-name">
+
+        <label class="review-form__label" for="patronymic">отчество:</label>
+          <input class="review-form__input patronymic-input" type="text" value="Викторович" name="fathers-name" id="patronymic">
+
       </div>
       <div class="review-form__wrapper contacts-inputs">
         <h2 class="review-form__title contacts-inputs__title text">
           Контактная информация:
         </h2>
-        <label class="review-form__label contacts-inputs__label" for="phone">
+        <label class="review-form__label contacts-inputs__label" for="phone">Контактный телефон*:</label>
           <input class="review-form__input contact-input phone-input" type="number" placeholder="Введите телефон" id="phone" name="tel">
-        </label>
-        <label class=" review-form__label contacts-inputs__label" for="email">
+
+        <label class=" review-form__label contacts-inputs__label" for="email">Электронная почта*:</label>
           <input class="review-form__input contact-input email-input" type="email" placeholder="Введите e-mail" id="email" name="mail">
-        </label>
+
       </div>
       <div class="review-form__wrapper impression-inputs">
         <h2 class="review-form__title impression-inputs__title text">
           Ваше общее впечатление:
         </h2>
-        <input class="review-form__input impression-input" type="radio" name="impression" id="positive" value="положительное" checked>
-        <label class="review-form__label impression-label" for="positive">Скорее положительное</label>
-        <input class="review-form__input impression-input" type="radio" name="impression" id="negative" value="отрицательное">
-        <label class="review-form__label impression-label" for="negative">Скорее отрицательное</label>
-        <input class="review-form__input impression-input" type="radio" name="impression" id="difficult" value="затрудняюсь">
-        <label class="review-form__label impression-label" for="difficult">Затрудняюсь ответить</label>
+        <ul class="review-form__list impression-list">
+          <li>
+            <input class="review-form__input impression-input" type="radio" name="impression" id="positive"
+            value="положительное" checked>
+            <label class="review-form__label impression-label" for="positive">Скорее положительное
+
+            </label>
+          </li>
+          <li>
+            <input class="review-form__input impression-input" type="radio" name="impression" id="negative"
+                value="отрицательное">
+            <label class="review-form__label impression-label" for="negative">Скорее отрицательное
+
+            </label>
+          </li>
+          <li>
+            <input class="review-form__input impression-input" type="radio" name="impression" id="difficult"
+                value="затрудняюсь">
+            <label class="review-form__label impression-label" for="difficult">Затрудняюсь ответить
+
+            </label>
+          </li>
+        </ul>
       </div>
       <div class="review-form__wrapper attraction-inputs">
         <h2 class="review-form__title attraction-title text">посещенные достопримечательности:</h2>
