@@ -42,6 +42,10 @@
     margin-bottom: 49px;
   }
 
+  &__map {
+    background-color: rgb(242, 241, 237);
+  }
+
   @media screen and (min-width: $tablet) {
     &__button {
       display: flex;
