@@ -1,13 +1,47 @@
-.main-nav {
-  position: relative;
+@import "../constants/colors.scss";
 
+.main-nav {
   &__toggle {
-    position: absolute;
+    position: relative;
     border: none;
     padding: 0;
-    background-color: initial;
     right: 20px;
-    top: 17px;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__burger {
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    background-color: $advantages-blue;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__burger::before {
+    content: "";
+    width: 23px;
+    height: 4px;
+    background-color: $advantages-blue;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -10px;
+  }
+
+  &__burger::after {
+    content: "";
+    width: 23px;
+    height: 4px;
+    background-color: $advantages-blue;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 10px;
   }
 
   &__toggle:hover {
@@ -46,6 +80,9 @@
   }
 
   @media screen and (min-width: $tablet) {
+    position: unset;
+    width: 100%;
+
     .menu-link {
       color: rgba(0, 0, 0, 1);
     }
