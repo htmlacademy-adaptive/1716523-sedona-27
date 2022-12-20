@@ -1,5 +1,30 @@
 @import "../constants/colors.scss";
 
+.main-nav.open .main-nav__wrapper {
+  display: block;
+}
+
+// .main-nav.open .main-nav__burger {
+//   background-color: rgb(255, 255, 255);
+//   transform: scale(0);
+// }
+
+.main-nav.open .main-nav__burger::before {
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.main-nav.open .main-nav__burger::after {
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+// .main-nav.open .main-nav__burger
+
 .main-nav {
   &__toggle {
     position: relative;
@@ -11,6 +36,7 @@
     background-color: inherit;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
   }
 
   &__burger {
@@ -54,6 +80,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 6;
   }
 
   &__menu-item {
