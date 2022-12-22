@@ -1,3 +1,5 @@
+@import "../constants/colors.scss";
+
 .products-mobile {
   padding-left: 20px;
   padding-right: 20px;
@@ -5,23 +7,50 @@
   flex-direction: column;
   align-items: center;
 
+  &__image {
+    display: block;
+  }
 
-  // &__list {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
-
-  &__item {
+  &__list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  &__sign-wrapper {
+    padding: 15px 0 25px 0;
+  }
+
+  &__sign-wrapper::after {
+    content: "";
+    width: 110%;
+    height: 1px;
+    background-color: $form-line-color;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
   }
 
   &__title-wrapper {
     padding: 37px 20px 25px 20px;
     text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__title-wrapper::after {
+    content: "";
+    width: 110%;
+    height: 1px;
+    background-color: $form-line-color;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
   }
 
   &__title {
@@ -34,6 +63,17 @@
 
   &__likes-wrapper {
     align-self: flex-start;
+  }
+
+  &__like-button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__like-button:hover {
+    cursor: pointer;
   }
 
   &__image-title {
