@@ -1,12 +1,17 @@
+@import "../constants/colors.scss";
+
 .mobile-modal {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__title {
     text-align: center;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    margin-bottom: 30px;
   }
 
   &__text {
@@ -16,6 +21,38 @@
     font-weight: 400;
     text-transform: uppercase;
   }
+
+  &__button-wrapper {
+    width: 100%;
+    min-height: 98px;
+    background-color: $inputs-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.success-button {
+  padding: 20px;
+  width: 280px;
+  min-height: 58px;
+  background-color: $button-blue;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.modal-error__button {
+  width: 180px;
+  min-height: 58px;
+  background-color: $button-blue;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .modal-error {
@@ -32,4 +69,34 @@
 
 .success-text-wrapper {
   padding: 39px 38px 30px 38px;
+}
+
+@media screen and (min-width: $tablet) {
+  .mobile-modal {
+    width: 400px;
+    min-height: 347px;
+    margin: 0 auto;
+  }
+
+  .modal-error__button {
+    width: 272px;
+  }
+
+  .modal-success {
+    width: 640px;
+    min-height: 347px;
+  }
+
+  .success-button {
+    width: 458px;
+  }
+
+  .mobile-modal__button-wrapper {
+    width: 100%;
+    min-height: 146px;
+    background-color: $inputs-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

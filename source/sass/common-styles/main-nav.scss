@@ -1,10 +1,77 @@
+@import "../constants/colors.scss";
+
+.main-nav.open .main-nav__wrapper {
+  display: block;
+}
+
+// .main-nav.open .main-nav__burger {
+//   background-color: rgb(255, 255, 255);
+//   transform: scale(0);
+// }
+
+.main-nav.open .main-nav__burger::before {
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.main-nav.open .main-nav__burger::after {
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+// .main-nav.open .main-nav__burger
+
 .main-nav {
   &__toggle {
+    position: relative;
     border: none;
     padding: 0;
-    background-color: initial;
-    padding-right: 20px;
-    padding-top: 17px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  &__burger {
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    background-color: $advantages-blue;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__burger::before {
+    content: "";
+    width: 23px;
+    height: 4px;
+    background-color: $advantages-blue;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -10px;
+  }
+
+  &__burger::after {
+    content: "";
+    width: 23px;
+    height: 4px;
+    background-color: $advantages-blue;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 10px;
+  }
+
+  &__toggle:hover {
+    cursor: pointer;
   }
 
   &__wrapper {
@@ -13,6 +80,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 6;
   }
 
   &__menu-item {
@@ -39,6 +107,9 @@
   }
 
   @media screen and (min-width: $tablet) {
+    position: unset;
+    width: 100%;
+
     .menu-link {
       color: rgba(0, 0, 0, 1);
     }

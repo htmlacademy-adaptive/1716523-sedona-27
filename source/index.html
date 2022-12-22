@@ -14,24 +14,15 @@
     <a href="index.html" class="main-header__logo logo">
       <img src="img/header-logo.svg" alt="Логотип города Седона." class="main-header__logo-img" width="185" height="96">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none" viewBox="0 0 23 22">
-          <path fill="#81B3D2" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
-        </svg>
+    <nav class="main-nav" id="nav-toggle">
+      <button class="main-nav__toggle" type="button" id="burger">
+        <div class="main-nav__burger"></div>
         <span class="visually-hidden">кнопка вызова меню навигации</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__menu-list">
           <li class="main-nav__menu-item">
             <a href="index.html" class="menu-link">главная</a>
-            <button class="close-button">
-              <svg class="close-button-svg" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none"
-                viewBox="0 0 23 23">
-                <path fill="#fff"
-                  d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" />
-              </svg>
-              <span class="visually-hidden">закрыть</span>
             </button>
           </li>
           <li class="main-nav__menu-item">
@@ -63,15 +54,15 @@
         <div class="advantages__item-wrapper true-city ">
           <div class="advantages__text-wrapper true-city__wrapper ">
             <h3 class="advantages__item-title text">настоящий городок</h3>
-            <span class="advantages__item-number">№1</span>
+            <div class="advantages__item-number">№1</div>
             <p class="advantages__item-text">седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img class="advantages__item-img adv1-img" src="img/true-city-mobile.jpg" alt="фотография города Седона"
             width="" height="">
         </div>
         <div class="benefits">
-            <div class="benefits__item housing">
-              <div class="benefits__text-wrapper">
+          <div class="benefits__item housing">
+            <div class="benefits__text-wrapper">
               <h4 class="benefits__title text">жильё</h4>
               <p class="benefits__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
@@ -94,7 +85,7 @@
         <div class="advantages__item-wrapper devils-bridge ">
           <div class="advantages__text-wrapper devils-bridge__wrapper ">
             <h3 class="advantages__item-title text">там есть мост дьявола</h3>
-            <span class="advantages__item-number">№2</span>
+            <div class="advantages__item-number">№2</div>
             <p class="advantages__item-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <img class="advantages__item-img adv2-img" src="img/devils-bridge-mobile.jpg" alt="фотография моста дьявола"
@@ -102,26 +93,32 @@
         </div>
       </li>
       <li class="advantages__item advantages__item--another-bcg-color ">
-        <!-- <div class="advantages__item advantages__item--another-bcg-color adv3 "> -->
-          <div class="advantages__text-wrapper advantages__item-wrapper ">
+        <!-- <div class="advantages__item advantages__item--another-bcg-color"> -->
+        <div class="advantages__item-wrapper ">
+          <div class="advantages__text-wrapper">
             <h3 class="advantages__item-title text">небольшая площадь</h3>
-            <span class="advantages__item-number">№3</span>
+            <div class="advantages__item-number advantages__item-number--another-bcg-color">№3</div>
             <p class="advantages__item-text">все интересные места находятся очень близко</p>
           </div>
+        </div>
         <!-- </div> -->
-        <!-- <div class="advantages__item advantages__item--another-bcg-color adv4"> -->
-          <div class="advantages__text-wrapper advantages__item-wrapper ">
+        <!-- <div class="advantages__item advantages__item--another-bcg-color"> -->
+        <div class="advantages__item-wrapper ">
+          <div class="advantages__text-wrapper center-adv">
             <h3 class="advantages__item-title text">красивая дорога</h3>
-            <span class="advantages__item-number">№4</span>
+            <div class="advantages__item-number advantages__item-number--another-bcg-color">№4</div>
             <p class="advantages__item-text">ехать в седону из лас-вегаса совсем не скучно!</p>
           </div>
+        </div>
         <!-- </div> -->
-        <!-- <div class="advantages__item advantages__item--another-bcg-color adv5"> -->
-          <div class="advantages__text-wrapper advantages__item-wrapper ">
+        <!-- <div class="advantages__item advantages__item--another-bcg-color"> -->
+        <div class="advantages__item-wrapper ">
+          <div class="advantages__text-wrapper">
             <h3 class="advantages__item-title text">мало туристов</h3>
-            <span class="advantages__item-number">№5</span>
+            <div class="advantages__item-number advantages__item-number--another-bcg-color">№5</div>
             <p class="advantages__item-text">большинство едет в гранд каньон и толпится там</p>
           </div>
+        </div>
         <!-- </div> -->
       </li>
 
@@ -134,7 +131,11 @@
         в седоне</p>
     </div>
     <a href="#" class="search__button button">найти гостиницу</a>
-    <img class="search-map" src="img/map-mobile.jpg" alt="карта седоны" width="" height="">
+    <iframe class="search__map"
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b353914fef93f393cfebc145fccded6f52f7b55ff517f1238e42d47a98991a0&amp;source=constructor"
+      width="320" height="350" frameborder="0"
+      title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+    </iframe>
   </section>
 
   <footer class="footer">
@@ -197,3 +198,4 @@
 </body>
 
 </html>
+<script src="./js/main.js"></script>
