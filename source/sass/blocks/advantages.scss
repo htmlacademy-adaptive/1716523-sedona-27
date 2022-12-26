@@ -13,12 +13,18 @@
     flex-direction: column;
   }
 
+  &__item-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__item--another-bcg-color {
     background-color: $advantages-grey;
   }
 
   &__item-img {
     background-color: rgb(237, 191, 180);
+    align-self: center;
   }
 
   &__item-text {
@@ -118,13 +124,24 @@
       flex-wrap: wrap;
     }
 
+    .devils-bridge {
+      flex-direction: row-reverse;
+    }
+
+    .true-city__wrapper,
+    .devils-bridge__wrapper {
+      padding: 52px 33px 30px 33px;
+    }
+
     &__item-wrapper {
       min-width: 256px;
+      display: flex;
+      flex-direction: row;
     }
 
     &__text-wrapper {
       padding: 52px 33px 52px 33px;
-      flex-grow: 1;
+      // flex-grow: 1;
       width: 190px;
     }
 
@@ -208,5 +225,4 @@
   background-color: rgba(129, 179, 210, 1);
   color: rgb(255, 255, 255);
   text-align: center;
-  order: 1;
 }
