@@ -40,8 +40,11 @@
   </header>
   <section class="hero">
     <div class="hero__img-wrapper">
-      <img class="hero__img" src="img/hero-img-title-mobile.svg"
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/hero-title-img-tablet.svg" width="461" height="350">
+      <img class="hero__img" src="./img/hero-img-title-mobile.svg"
         alt="welcome to the georgeous Sedona, because the Grand Canyon sucks!" width="282" height="214">
+      </picture>
     </div>
     <h1 class="hero__title text">
       седона — небольшой городок в аризоне, заслуживающий большего!
@@ -57,12 +60,14 @@
             <div class="advantages__item-number">№1</div>
             <p class="advantages__item-text">седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
+          <div class="advantages__picture-wrapper">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/true-city-desktop.png 1x, img/true-city-desktop-retina.png 2x">
             <source media="(min-width: 768px)" srcset="img/true-city-tablet.png 1x, img/true-city-tablet-retina.png 2x">
           <img class="advantages__item-img adv1-img" src="img/true-city-mobile.jpg" alt="фотография города Седона."
             width="320" height="260" srcset="img/true-city-retina.png 2x">
           </picture>
+        </div>
         </div>
         <div class="benefits">
           <div class="benefits__item housing">
@@ -111,8 +116,10 @@
             <p class="advantages__item-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.png 1x, img/devils-bridge-desktop-retina.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.png 1x, img/devils-bridge-tablet-retina.jpg 2x">
           <img class="advantages__item-img adv2-img" src="img/devils-bridge-mobile.jpg" alt="фотография моста дьявола."
-            width="320" height="260">
+            width="320" height="260" srcset="img/devils-bridge-retina.jpg 2x">
           </picture>
         </div>
       </li>

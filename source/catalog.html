@@ -40,7 +40,10 @@
   </header>
   <section class="catalog-hero">
     <div class="catalog-hero__wrapper">
-      <img src="./img/sedona-hero-catalog.svg" alt="Седона" width="" height="">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/catalog-hero-text-tablet.svg" width="457" height="78">
+      <img class="catalog-hero__img" src="./img/sedona-hero-catalog.svg" alt="Седона" width="229" height="39">
+    </picture>
     </div>
     <h1 class="catalog-hero__title visually-hidden">
       Фотографии и видео города Седона.
@@ -56,8 +59,12 @@
     <div class="products-mobile__wrapper">
       <ul class="products-mobile__list">
         <li class="products-mobile__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/spaces-cat-desktop.jpg 1x, img/spaces-cat-desktop-retina.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/spaces-cat-tablet.jpg 1x, img/spaces-cat-tablet-retina.jpg 2x">
           <img class="products-mobile__image" src="img/spaces-catalog-image.jpg" alt="фотография просторов седоны"
-            width="280" height="280">
+            width="280" height="280" srcset="img/spaces-cat-retina.jpg 2x">
+          </picture>
             <div class="products-mobile__sign-wrapper">
           <div class="products-mobile__text-wrapper">
             <h2 class="products-mobile__image-title text">неродные просторы</h2>
@@ -76,8 +83,12 @@
         </div>
         </li>
         <li class="products-mobile__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/vegetation-cat-desktop.jpg 1x, img/vegetation-cat-desktop-retina.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/vegetation-cat-tablet.jpg 1x, img/vegetation-cat-tablet-retina.jpg 2x">
           <img class="products-mobile__image" src="img/vegetation-catalog-image.jpg"
-            alt="фотография растительности седоны" width="280" height="280">
+            alt="фотография растительности седоны" width="280" height="280" srcset="img/vegetation-cat-retina.jpg 2x">
+          </picture>
             <div class="products-mobile__sign-wrapper">
           <div class="products-mobile__text-wrapper">
             <h2 class="products-mobile__image-title text">местная растительность</h2>
@@ -96,8 +107,12 @@
         </div>
         </li>
         <li class="products-mobile__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/road-cat-desktop.jpg 1x, img/road-cat-desktop-retina.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/road-cat-tablet.jpg 1x, img/road-cat-tablet-retina.jpg 2x">
           <img class="products-mobile__image" src="img/road-catalog-image.jpg" alt="фотография дороги на север"
-            width="280" height="280">
+            width="280" height="280" srcset="img/road-cat-retina.jpg 2x">
+          </picture>
             <div class="products-mobile__sign-wrapper">
           <div class="products-mobile__text-wrapper">
             <h2 class="products-mobile__image-title text">дорога на север</h2>
@@ -117,8 +132,12 @@
         </div>
         </li>
         <li class="products-mobile__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/devils-bridge-cat-desktop.jpg 1x, img/devils-bridge-cat-desktop-retina.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/devils-bridge-cat-tablet.jpg 1x, img/devils-bridge-cat-tablet-retina.jpg 2x">
           <img class="products-mobile__image" src="img/devils-bridge-mobile.jpg" alt="фотография моста дьявола"
-            width="280" height="280">
+            width="280" height="280" srcset="img/devils-bridge-cat-retina.jpg 2x">
+          </picture>
             <div class="products-mobile__sign-wrapper">
           <div class="products-mobile__text-wrapper">
             <h2 class="products-mobile__image-title text">мост дьявола</h2>
@@ -144,7 +163,12 @@
           в очередной раз!</p>
         </div>
         <div class="products-mobile__img-wrapper">
-        <img class="products-mobile__img" src="img/video-mobile-image.jpg" alt="видео достопримечательностей седоны" width="280" height="177">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-cat-desktop.jpg 1x, img/video-cat-desktop-retina.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-cat-tablet.jpg 1x, img/video-cat-tablet-retina.jpg 2x">
+        <img class="products-mobile__img video-image" src="img/video-mobile-image.jpg" alt="видео достопримечательностей седоны" width="280" height="177"
+        srcset="img/video-cat-mobile-retina.jpg 2x">
+      </picture>
       </div>
       </div>
     </div>

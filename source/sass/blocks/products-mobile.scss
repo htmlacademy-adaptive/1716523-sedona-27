@@ -255,6 +255,7 @@
     &__list {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      margin-bottom: 62px;
     }
 
     &__item {
@@ -276,6 +277,12 @@
       color: rgb(255, 255, 255);
     }
 
+    &__img-wrapper {
+      margin: 0 auto;
+      width: 800px;
+      height: 500px;
+    }
+
     &__image {
       display: block;
     }
@@ -294,6 +301,10 @@
 
     &__like-icon path {
       fill: rgb(255, 255, 255, 1);
+    }
+
+    &__video-text-wrapper {
+      margin-bottom: 64px;
     }
   }
 }
