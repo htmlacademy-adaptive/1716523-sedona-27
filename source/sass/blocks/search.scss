@@ -42,8 +42,16 @@
     margin-bottom: 49px;
   }
 
+  &__map-wrapper {
+    width: 100%;
+    background-color: rgb(242, 241, 236);
+    display: flex;
+    justify-content: center;
+  }
+
   &__map {
     background-color: rgb(242, 241, 237);
+    width: 100%;
   }
 
   @media screen and (min-width: $tablet) {

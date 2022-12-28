@@ -23,34 +23,40 @@
     position: relative;
   }
 
+  &__item::before {
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item:last-child::after {
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
   &__sign-wrapper {
     padding: 15px 0 25px 0;
   }
 
-  &__sign-wrapper::after {
-    content: "";
-    width: 110%;
-    height: 1px;
-    background-color: $form-line-color;
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-  }
-
   &__title-wrapper {
-    padding: 37px 20px 25px 20px;
+    padding: 37px 0 25px 0;
     text-align: center;
     margin-bottom: 25px;
-  }
-
-  &__title-wrapper::after {
-    content: "";
-    width: 110%;
-    height: 1px;
-    background-color: $form-line-color;
-    position: absolute;
-    bottom: 0;
-    left: -20px;
   }
 
   &__title {
@@ -59,10 +65,19 @@
 
   &__text-wrapper {
     align-self: flex-start;
+    margin-bottom: 11px;
   }
 
   &__likes-wrapper {
     align-self: flex-start;
+  }
+
+  &__likes-quantity {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    font-family: inherit;
+    margin-left: 14px;
   }
 
   &__like-button {
@@ -70,6 +85,10 @@
     padding: 0;
     border: none;
     background-color: transparent;
+  }
+
+  &__like-icon {
+    opacity: 0.3;
   }
 
   &__like-button:hover {
@@ -112,6 +131,29 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  &__img-wrapper {
+    width: 100%;
+    background-color: rgb(149, 128, 120);
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__img-wrapper::after {
+    content: "";
+    background-image: url("../img/video-triangle.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 54px;
+  }
 }
 
 .mobile-title {
@@ -132,13 +174,52 @@
     padding-left: 60px;
     padding-right: 60px;
 
+    &__title-wrapper {
+      width: 458px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 21px;
+      font-weight: 400px;
+    }
+
+    &__text-wrapper {
+      margin: 0;
+      align-self: center;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
     &__list {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
 
+    &__item {
+      margin: 0;
+    }
+
+    &__item::before {
+      display: none;
+    }
+
     &__item:first-child {
       grid-column: 1/3;
+    }
+
+    &__likes-wrapper {
+      align-self: center;
+    }
+
+    &__likes-quantity {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 700;
+      font-family: inherit;
+      margin-left: 9px;
     }
 
     &__sign-wrapper {
@@ -146,6 +227,10 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      padding: 0 20px;
+      background-color: $sign-wrapper-color;
+      box-sizing: border-box;
+      min-height: 80px;
     }
   }
 
@@ -170,6 +255,11 @@
     &__list {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      margin-bottom: 62px;
+    }
+
+    &__item {
+      position: relative;
     }
 
     &__item:first-child {
@@ -177,10 +267,44 @@
     }
 
     &__sign-wrapper {
+      position: absolute;
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.3);
+      bottom: 0;
+      color: rgb(255, 255, 255);
+    }
+
+    &__img-wrapper {
+      margin: 0 auto;
+      width: 800px;
+      height: 500px;
+    }
+
+    &__image {
+      display: block;
+    }
+
+    &__image-author {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    &__likes-wrapper {
+      color: rgb(255, 255, 255);
+    }
+
+    &__like-icon {
+      opacity: 1;
+    }
+
+    &__like-icon path {
+      fill: rgb(255, 255, 255, 1);
+    }
+
+    &__video-text-wrapper {
+      margin-bottom: 64px;
     }
   }
 }

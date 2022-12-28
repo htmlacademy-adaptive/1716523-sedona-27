@@ -68,6 +68,10 @@
       margin-bottom: 16px;
     }
 
+    &__input:hover {
+      background-color: $form-input-color-hover;
+    }
+
     // &__item {
     //   display: flex;
     //   align-items: center;
@@ -84,6 +88,38 @@
     width: 46px;
     height: 46px;
     margin: 0;
+  }
+
+  .impression-input[type="radio"]:checked + .radio-mark::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(51, 51, 51, 1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+  }
+
+  .attraction-input[type="checkbox"]:checked + .checkbox-mark::before,
+  .attraction-input[type="checkbox"]:checked + .checkbox-mark::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url("../img/checkbox-icon.svg");
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 16px;
+    content: "";
+  }
+
+  .impression-label:hover .radio-mark {
+    background-color: $form-input-color-hover;
+  }
+
+  .attraction-label:hover .checkbox-mark {
+    background-color: $form-input-color-hover;
   }
 
   .impression-label {
@@ -106,6 +142,7 @@
   }
 
   .radio-mark {
+    position: relative;
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -135,11 +172,13 @@
   }
 
   .checkbox-mark {
+    position: relative;
     width: 46px;
     height: 46px;
     background-color: $inputs-color;
     margin-right: 16px;
   }
+
 
   &__title-wrapper {
     display: flex;
