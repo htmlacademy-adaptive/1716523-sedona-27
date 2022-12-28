@@ -2,6 +2,7 @@
 
 .main-nav.open .main-nav__wrapper {
   display: block;
+  z-index: 11;
 }
 
 // .main-nav.open .main-nav__burger {
@@ -36,7 +37,7 @@
     background-color: inherit;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10;
+    z-index: 12;
   }
 
   &__burger {
