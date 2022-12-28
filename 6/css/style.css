@@ -824,7 +824,7 @@
   }
 }
 .catalog-hero__wrapper {
-  background-image: url("../../img/triangle-mobile.svg"), url("../../img/catalog-hero-bcg.jpg");
+  background-image: url("../img/triangle-mobile.svg"), url("../img/catalog-hero-bcg.jpg");
   background-size: contain, cover;
   background-color: #81b3d2;
   background-position: bottom, center;
@@ -837,7 +837,7 @@
 }
 @media screen and (min-width: 768px) {
   .catalog-hero__wrapper {
-    background-image: url("../../img/triangle-tablet.svg"), url("../../img/cat-hero-img-tablet.jpg");
+    background-image: url("../img/triangle-tablet.svg"), url("../img/cat-hero-img-tablet.jpg");
     background-size: contain, cover;
     background-color: #81b3d2;
     background-position: bottom, center;
@@ -851,7 +851,7 @@
 }
 @media screen and (min-width: 1200px) {
   .catalog-hero__wrapper {
-    background-image: url("../../img/triangle-desktop.svg"), url("../../img/cat-hero-img-desktop.jpg");
+    background-image: url("../img/triangle-desktop.svg"), url("../img/cat-hero-img-desktop.jpg");
     background-size: contain, cover;
     background-color: #81b3d2;
     background-position: bottom, center;
@@ -860,15 +860,39 @@
 }
 
 .form-hero__wrapper {
-  background-image: url("../../img/hero-image-mobile.jpg");
-  background-size: cover;
+  background-image: url("../img/triangle-mobile.svg"), url("../img/catalog-hero-bcg.jpg");
+  background-size: contain, cover;
   background-color: #81b3d2;
-  background-position-y: 200px;
-  min-height: 158px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-position: bottom, center;
+  min-height: 160px;
+  background-repeat: no-repeat;
+}
+.form-hero__img {
+  margin: 0 auto;
+  padding-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .form-hero__wrapper {
+    background-image: url("../img/triangle-tablet.svg"), url("../img/cat-hero-img-tablet.jpg");
+    background-size: contain, cover;
+    background-color: #81b3d2;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    min-height: 288px;
+  }
+  .form-hero__img {
+    margin: 0 auto;
+    padding-top: 95px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-hero__wrapper {
+    background-image: url("../img/triangle-desktop.svg"), url("../img/cat-hero-img-desktop.jpg");
+    background-size: contain, cover;
+    background-color: #81b3d2;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+  }
 }
 
 .review {
