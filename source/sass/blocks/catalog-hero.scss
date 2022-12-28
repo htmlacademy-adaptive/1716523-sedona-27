@@ -2,7 +2,7 @@
 
 .catalog-hero {
   &__wrapper {
-    background-image: url("/img/triangle-mobile.svg"), url("/img/catalog-hero-bcg.jpg");
+    background-image: url("../img/triangle-mobile.svg"), url("../img/catalog-hero-bcg.jpg");
     background-size: contain, cover;
     background-color: $advantages-blue;
     background-position: bottom, center;
@@ -17,7 +17,7 @@
 
   @media screen and (min-width: $tablet) {
     &__wrapper {
-      background-image: url("/img/triangle-tablet.svg"), url("/img/cat-hero-img-tablet.jpg");
+      background-image: url("../img/triangle-tablet.svg"), url("../img/cat-hero-img-tablet.jpg");
       background-size: contain, cover;
       background-color: $advantages-blue;
       background-position: bottom, center;
@@ -33,7 +33,7 @@
 
   @media screen and (min-width: $desktop) {
     &__wrapper {
-      background-image: url("/img/triangle-desktop.svg"), url("/img/cat-hero-img-desktop.jpg");
+      background-image: url("../img/triangle-desktop.svg"), url("../img/cat-hero-img-desktop.jpg");
       background-size: contain, cover;
       background-color: $advantages-blue;
       background-position: bottom, center;
