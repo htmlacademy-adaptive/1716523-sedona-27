@@ -3,9 +3,19 @@
 .advantages {
   .true-city__wrapper {
     background-image: url("../../img/adv-triangle-mobile.svg");
-    background-position: 0 -20%;
+    background-position: 0 -11%;
     background-repeat: no-repeat;
     background-size: 100% 30%;
+  }
+
+  .devils-bridge__wrapper {
+    min-height: 191px;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .devils-bridge__wrapper h3 {
+    margin-top: 20px;
   }
 
   &__list {
@@ -39,6 +49,19 @@
     background-color: $advantages-grey;
   }
 
+  &__item--another-bcg-color .advantages__text-wrapper {
+    min-height: 165px;
+    padding: 0 32px;
+  }
+
+  &__item--another-bcg-color h3 {
+    margin-top: 0;
+  }
+
+  &__item--another-bcg-color p {
+    margin: 0;
+  }
+
   &__item-img {
     background-color: rgb(237, 191, 180);
     align-self: center;
@@ -51,13 +74,18 @@
     font-weight: 400;
     line-height: 21px;
     text-transform: uppercase;
+    margin: 0 18px 40px 18px;
+  }
+
+  &__item-title {
+    margin-top: 70px;
   }
 
   &__item-number {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 30px 0;
+    padding: 11px 0 17px 0;
   }
 
   &__item-number::before {
@@ -97,10 +125,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 23px 18px 46px 18px;
+    padding: 23px 18px 18px 18px;
 
     &__item {
       position: relative;
+      margin-bottom: 27px;
     }
 
     &__icon-wrapper {
@@ -117,16 +146,23 @@
     &__text-wrapper {
       text-align: left;
       width: 237px;
-      min-height: 113px;
+      // min-height: 113px;
       padding-left: 47px;
     }
 
     &__title {
       margin-bottom: 16px;
+      margin-top: 7px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
     }
 
     &__text {
       text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
     }
   }
 
