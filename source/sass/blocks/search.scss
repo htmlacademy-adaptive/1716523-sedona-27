@@ -70,11 +70,17 @@
       margin-bottom: 49px;
     }
 
+    &__text-wrapper {
+      padding: 61px 0 40px 0;
+      max-width: 435px;
+      // margin: 0 auto;
+    }
+
     &__title {
       font-size: 30px;
       font-weight: 700;
       line-height: 26px;
-      padding-bottom: 20px;
+      padding-bottom: 32px;
     }
   }
 }
