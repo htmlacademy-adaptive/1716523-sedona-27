@@ -121,7 +121,6 @@
 
     &__menu-list {
       display: flex;
-      justify-content: space-between;
       width: 100%;
     }
 
@@ -131,18 +130,14 @@
       line-height: 21px;
       text-align: center;
       text-transform: uppercase;
-      padding-top: 17px;
+      padding-top: 19px;
       box-sizing: border-box;
       background-color: inherit;
       min-width: 153px;
     }
 
     &__menu-item:nth-child(2) {
-      margin-right: 50px;
-    }
-
-    &__menu-item:nth-child(3) {
-      margin-left: 50px;
+      margin-right: 155px;
     }
 
     &__wrapper {
