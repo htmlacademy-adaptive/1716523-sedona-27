@@ -73,3 +73,21 @@
     }
   }
 }
+
+@media screen and (min-width: $desktop) {
+  .footer {
+    &__title {
+      margin-bottom: 0;
+      padding-left: 119px;
+    }
+
+    &__list {
+      margin-bottom: 0;
+      padding-left: 15px;
+    }
+
+    &__copyright-wrapper {
+      padding-right: 136px;
+    }
+  }
+}

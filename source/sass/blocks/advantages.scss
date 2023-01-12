@@ -382,16 +382,106 @@
   @media screen and (min-width: $desktop) {
     .true-city__wrapper,
     .devils-bridge__wrapper {
-      padding: 0;
+      // padding: 0;
+      width: 400px;
     }
 
-    .center-adv {
+    .devils-bridge__wrapper h3 {
+      margin-top: 0;
+      padding: 0 60px;
+    }
+
+    .devils-bridge__wrapper p {
+      padding: 0 50px;
+    }
+
+    .advantages .advantages__item--another-bcg-color .center-adv {
       padding: 41px 0 52px 0;
+    }
+
+    &__title {
+      padding: 0 124px 44px 124px;
     }
 
     &__text-wrapper {
       width: 400px;
-      padding: 0;
+      padding: 52px 50px 51px 50px;
+    }
+
+    &__item-title {
+      padding: 0 60px;
+    }
+
+    &__item-number {
+      padding: 12px 0 24px 0;
+    }
+
+    &__item-text {
+      padding: 0 24px;
+    }
+
+    .advantages__item--another-bcg-color .advantages__item-wrapper {
+      width: 400px;
+      max-width: none;
+    }
+
+    .advantages__item--another-bcg-color .advantages__text-wrapper {
+      padding: 63px 33px 41px 33px;
+    }
+
+    .advantages__item--another-bcg-color .advantages__item-wrapper .center-adv {
+      padding: 52px 33px 41px 33px;
+    }
+    // .advantages__item--another-bcg-color  {
+    //   padding: 63px 32px;
+    // }
+
+    .advantages__item--another-bcg-color h3 {
+      padding: 0 90px;
+    }
+
+    .benefits {
+      &__text-wrapper {
+        padding-top: 0;
+        width: 300px;
+      }
+
+      .housing {
+        .benefits__icon-wrapper {
+          width: 80px;
+          height: 73px;
+          margin-bottom: 28px;
+        }
+
+        .benefits__text {
+          padding: 21px 0 0 0;
+        }
+      }
+
+      .food {
+        .benefits__icon-wrapper {
+          width: 73px;
+          height: 69px;
+          margin-bottom: 26px;
+        }
+
+        .benefits__text {
+          padding: 22px 0 0 0;
+        }
+      }
+
+      .souvenirs {
+        .benefits__icon-wrapper {
+          width: 77px;
+          height: 75px;
+          margin-bottom: 26px;
+          // margin-top: -3px;
+        }
+
+        .benefits__text {
+          padding: 24px 0 0 0;
+        }
+      }
     }
   }
 }

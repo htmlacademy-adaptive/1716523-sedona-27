@@ -83,4 +83,14 @@
       padding-bottom: 32px;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    &__text-wrapper {
+      padding: 61px 0 45px 0;
+    }
+
+    &__button {
+      margin-bottom: 66px;
+    }
+  }
 }

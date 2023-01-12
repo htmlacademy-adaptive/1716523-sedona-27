@@ -151,8 +151,18 @@
       display: none;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    &__menu-list {
+      padding: 0 44px 0 44px;
+    }
+
+    &__menu-item:nth-child(2) {
+      margin-right: 240px;
+    }
+  }
 }
 
-.menu-link {
-  color: rgb(255, 255, 255);
-}
+// .menu-link {
+//   color: rgb(255, 255, 255);
+// }
