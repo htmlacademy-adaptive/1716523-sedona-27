@@ -122,6 +122,7 @@
     &__menu-list {
       display: flex;
       width: 100%;
+      justify-content: space-between;
     }
 
     &__menu-item {
