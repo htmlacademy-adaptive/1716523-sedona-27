@@ -1,6 +1,8 @@
 @import "../constants/colors.scss";
 
 .catalog-hero {
+  margin-bottom: 30px;
+
   &__wrapper {
     background-image: url("../img/triangle-mobile.svg"), url("../img/catalog-hero-bcg.jpg");
     background-size: contain, cover;

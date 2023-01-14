@@ -31,7 +31,7 @@
     position: relative;
     border: none;
     padding: 0;
-    right: 20px;
+    right: 12px;
     width: 40px;
     height: 40px;
     background-color: inherit;
@@ -105,6 +105,10 @@
       border: none;
       background-color: inherit;
     }
+
+    .menu-link {
+      color: rgb(255, 255, 255);
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -121,8 +125,8 @@
 
     &__menu-list {
       display: flex;
-      justify-content: space-between;
       width: 100%;
+      justify-content: space-between;
     }
 
     &__menu-item {
@@ -131,18 +135,14 @@
       line-height: 21px;
       text-align: center;
       text-transform: uppercase;
-      padding-top: 17px;
+      padding-top: 19px;
       box-sizing: border-box;
       background-color: inherit;
       min-width: 153px;
     }
 
     &__menu-item:nth-child(2) {
-      margin-right: 50px;
-    }
-
-    &__menu-item:nth-child(3) {
-      margin-left: 50px;
+      margin-right: 155px;
     }
 
     &__wrapper {
@@ -155,8 +155,18 @@
       display: none;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    &__menu-list {
+      padding: 0 44px 0 44px;
+    }
+
+    &__menu-item:nth-child(2) {
+      margin-right: 240px;
+    }
+  }
 }
 
-.menu-link {
-  color: rgb(255, 255, 255);
-}
+// .menu-link {
+//   color: rgb(255, 255, 255);
+// }

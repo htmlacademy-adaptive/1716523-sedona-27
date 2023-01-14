@@ -14,21 +14,29 @@
 }
 
 .hero__title {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 26px;
-  padding: 32px 18px 35px 18px;
+  line-height: 28px;
+  padding: 32px 30px 35px 30px;
   text-align: center;
 }
 
 @media screen and (min-width: $tablet) {
   .hero__img-wrapper {
-    background-image: url("../../img/triangle-tablet.svg"), url("../img/hero-img-tablet.jpg");
+    background-image: url("../img/triangle-tablet.svg"), url("../img/hero-img-tablet.jpg");
     background-color: rgb(129, 179, 210);
     background-repeat: no-repeat;
-    background-position: 50% 100%, center;
+    background-position: 0 100%, center;
     background-size: contain, cover;
     min-height: 520px;
+  }
+
+  .hero__title {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 45px 124px 28px 124px;
+    text-align: center;
   }
 
   .hero__img {
@@ -43,5 +51,11 @@
     background-repeat: no-repeat;
     background-position: 50% 100%, center;
     background-size: contain, cover;
+  }
+
+  .hero__title {
+    width: 484px;
+    margin: 0 auto;
+    padding: 57px 0 26px 0;
   }
 }

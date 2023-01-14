@@ -67,6 +67,17 @@ img {
   @media screen and (min-width: $desktop) {
     min-width: $desktop;
     margin: 0 auto;
+    background-color: rgb(231, 229, 229);
+  }
+}
+
+.content__wrapper {
+  max-width: 1200px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+
+  @media screen and (min-width: $desktop) {
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
 }
 

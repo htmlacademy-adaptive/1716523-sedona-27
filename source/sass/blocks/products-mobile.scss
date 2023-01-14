@@ -54,7 +54,7 @@
   }
 
   &__title-wrapper {
-    padding: 37px 0 25px 0;
+    padding: 37px 0 35px 0;
     text-align: center;
     margin-bottom: 25px;
   }
@@ -77,7 +77,7 @@
     line-height: 21px;
     font-weight: 700;
     font-family: inherit;
-    margin-left: 14px;
+    margin-left: 10px;
   }
 
   &__like-button {
@@ -108,6 +108,10 @@
     color: rgba(51, 51, 51, 1);
   }
 
+  &__video-wrapper {
+    margin-bottom: 27px;
+  }
+
   &__video-text-wrapper {
     display: flex;
     flex-direction: column;
@@ -121,7 +125,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   &__video-text {
@@ -157,9 +161,9 @@
 }
 
 .mobile-title {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 21px;
 }
 
 .mobile-text {
@@ -174,28 +178,41 @@
     padding-left: 60px;
     padding-right: 60px;
 
+    &__wrapper {
+      margin-bottom: 48px;
+    }
+
+    &__title {
+      margin-bottom: 34px;
+    }
+
     &__title-wrapper {
       width: 458px;
+      margin-bottom: 45px;
     }
 
     &__text {
-      font-size: 15px;
+      font-size: 14px;
       line-height: 21px;
-      font-weight: 400px;
+      font-weight: 400;
+      padding: 0 15px 0 15px;
     }
 
     &__text-wrapper {
       margin: 0;
       align-self: center;
+      padding-top: 6px;
     }
 
     &__image {
       width: 100%;
+      height: auto;
     }
 
     &__list {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      margin-bottom: 38px;
     }
 
     &__item {
@@ -219,7 +236,7 @@
       line-height: 21px;
       font-weight: 700;
       font-family: inherit;
-      margin-left: 9px;
+      margin-left: 4px;
     }
 
     &__sign-wrapper {
@@ -231,6 +248,10 @@
       background-color: $sign-wrapper-color;
       box-sizing: border-box;
       min-height: 80px;
+    }
+
+    &__video-text-wrapper {
+      margin-bottom: 51px;
     }
   }
 
@@ -244,6 +265,7 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 26px;
+    margin-bottom: 33px;
   }
 }
 
@@ -301,6 +323,10 @@
 
     &__like-icon path {
       fill: rgb(255, 255, 255, 1);
+    }
+
+    &__like-button {
+      color: rgba(255, 255, 255, 1);
     }
 
     &__video-text-wrapper {

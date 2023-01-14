@@ -2,10 +2,23 @@
 
 .advantages {
   .true-city__wrapper {
-    background-image: url("../../img/adv-triangle-mobile.svg");
-    background-position: 0 -20%;
+    background-image: url("../img/adv-triangle-mobile.svg");
+    background-position: 0 0;
     background-repeat: no-repeat;
-    background-size: 100% 30%;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    min-height: 211px;
+    // background-size: 100% 30%;
+  }
+
+  .devils-bridge__wrapper {
+    min-height: 191px;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .devils-bridge__wrapper h3 {
+    margin-top: 20px;
   }
 
   &__list {
@@ -15,9 +28,18 @@
     justify-content: center;
   }
 
+  &__title {
+    padding: 0 18px 17px 18px;
+    color: rgba(51, 51, 51, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+  }
+
   &__item {
     min-width: 284px;
-    min-height: 167px;
+    // min-height: 167px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -29,14 +51,38 @@
   }
 
   &__text-wrapper {
-    min-height: 211px;
+    // min-height: 211px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
+    padding: 37px 18px;
+    box-sizing: border-box;
   }
 
   &__item--another-bcg-color {
     background-color: $advantages-grey;
+
+    .advantages__item-number--another-bcg-color {
+      padding: 14px 0 18px 0;
+    }
+  }
+
+  &__item--another-bcg-color .advantages__text-wrapper {
+    // min-height: 165px;
+    padding: 24px 0;
+  }
+
+  .advantages__item-wrapper--border-bottom {
+    margin: 0 32px;
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
+  }
+
+  &__item--another-bcg-color h3 {
+    margin-top: 0;
+  }
+
+  &__item--another-bcg-color p {
+    margin: 0;
   }
 
   &__item-img {
@@ -51,13 +97,18 @@
     font-weight: 400;
     line-height: 21px;
     text-transform: uppercase;
+    // margin: 0 18px 40px 18px;
   }
+
+  // &__item-title {
+  //   margin-top: 70px;
+  // }
 
   &__item-number {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 30px 0;
+    padding: 11px 0 17px 0;
   }
 
   &__item-number::before {
@@ -97,10 +148,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 23px 18px 46px 18px;
+    padding: 23px 18px 18px 18px;
 
     &__item {
       position: relative;
+      margin-bottom: 27px;
     }
 
     &__icon-wrapper {
@@ -117,26 +169,47 @@
     &__text-wrapper {
       text-align: left;
       width: 237px;
-      min-height: 113px;
+      // min-height: 113px;
       padding-left: 47px;
     }
 
     &__title {
       margin-bottom: 16px;
+      margin-top: 7px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
     }
 
     &__text {
       text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
     }
   }
 
   @media screen and (min-width: $tablet) {
+    &__title {
+      padding: 0 124px 54px 124px;
+    }
+
     &__list {
       display: flex;
       flex-direction: column;
       width: 100%;
       justify-content: center;
       align-items: center;
+    }
+
+    &__item-title {
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+
+    &__item-number {
+      padding: 13px 0 24px 0;
     }
 
     .true-city,
@@ -151,7 +224,16 @@
 
     .true-city__wrapper,
     .devils-bridge__wrapper {
-      padding: 0 33px 0 33px;
+      display: flex;
+      align-items: center;
+      padding: 54px 33px 27px 33px;
+      flex-direction: column;
+      width: 256px;
+    }
+
+    .devils-bridge__wrapper h3 {
+      margin-top: 0;
+      padding: 0 20px;
     }
 
     .true-city__wrapper {
@@ -159,26 +241,48 @@
     }
 
     &__item-wrapper {
-      min-width: 256px;
       display: flex;
       flex-direction: row;
     }
 
     &__text-wrapper {
-      padding: 52px 33px 52px 33px;
-      width: 190px;
+      // padding: 52px 33px 52px 33px;
+      // width: 190px;
     }
-
-    .center-adv {
-      padding: 41px 33px 52px 33px;
-    }
-
 
     &__item--another-bcg-color {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      width: 100%;
+
+      .advantages__item-wrapper {
+        max-width: 256px;
+      }
+
+      .advantages__text-wrapper {
+        padding: 52px 33px;
+        margin: 0;
+      }
+
+      .center-adv {
+        padding: 41px 39px;
+      }
+
+      h3 {
+        padding: 0 16px;
+      }
+
+      .advantages__item-number--another-bcg-color {
+        padding: 14px 0 24px 0;
+      }
+    }
+
+
+    .advantages__item-wrapper--border-bottom {
+      margin: 0;
+      border-bottom: none;
     }
 
     &__item-img {
@@ -192,16 +296,54 @@
       grid-template-columns: 1fr 1fr 1fr;
       padding: 0;
 
+      .housing {
+        .benefits__icon-wrapper {
+          width: 77px;
+          height: 72px;
+          margin-bottom: 25px;
+        }
+
+        .benefits__text {
+          padding: 21px 11px 0 11px;
+        }
+      }
+
+      .food {
+        .benefits__icon-wrapper {
+          width: 80px;
+          height: 68px;
+          margin-bottom: 26px;
+        }
+
+        .benefits__text {
+          padding: 22px 18px 0 17px;
+        }
+      }
+
+      .souvenirs {
+        .benefits__icon-wrapper {
+          width: 67px;
+          height: 75px;
+          margin-bottom: 14px;
+          margin-top: -3px;
+        }
+
+        .benefits__text {
+          padding: 24px 13px 0 9px;
+        }
+      }
+
       &__item {
         box-sizing: border-box;
-        min-width: 257px;
+        // min-width: 257px;
         min-height: 331px;
         padding: 0;
-        position: relative;
+        // position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0;
       }
 
       &__text-wrapper {
@@ -210,18 +352,29 @@
         padding: 0;
       }
 
+      &__text {
+        padding-top: 24px;
+      }
+
       &__icon-wrapper {
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        top: 24px;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 73px;
+        height: 72px;
+        position: static;
+        // top: 60px;
+        // left: 50%;
+        // transform: translateX(-50%);
       }
 
       &__icon {
         width: 100%;
         height: 100%;
+      }
+
+      &__title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        margin: 0;
       }
     }
   }
@@ -229,28 +382,118 @@
   @media screen and (min-width: $desktop) {
     .true-city__wrapper,
     .devils-bridge__wrapper {
-      padding: 0;
+      // padding: 0;
+      width: 400px;
     }
 
-    .center-adv {
+    .devils-bridge__wrapper h3 {
+      margin-top: 0;
+      padding: 0 60px;
+    }
+
+    .devils-bridge__wrapper p {
+      padding: 0 50px;
+    }
+
+    .advantages .advantages__item--another-bcg-color .center-adv {
       padding: 41px 0 52px 0;
+    }
+
+    &__title {
+      padding: 0 124px 44px 124px;
     }
 
     &__text-wrapper {
       width: 400px;
-      padding: 0;
+      padding: 52px 50px 51px 50px;
+    }
+
+    &__item-title {
+      padding: 0 60px;
+    }
+
+    &__item-number {
+      padding: 12px 0 24px 0;
+    }
+
+    &__item-text {
+      padding: 0 24px;
+    }
+
+    .advantages__item--another-bcg-color .advantages__item-wrapper {
+      width: 400px;
+      max-width: none;
+    }
+
+    .advantages__item--another-bcg-color .advantages__text-wrapper {
+      padding: 63px 33px 41px 33px;
+    }
+
+    .advantages__item--another-bcg-color .advantages__item-wrapper .center-adv {
+      padding: 52px 33px 41px 33px;
+    }
+    // .advantages__item--another-bcg-color  {
+    //   padding: 63px 32px;
+    // }
+
+    .advantages__item--another-bcg-color h3 {
+      padding: 0 90px;
+    }
+
+    .benefits {
+      &__text-wrapper {
+        padding-top: 0;
+        width: 300px;
+      }
+
+      .housing {
+        .benefits__icon-wrapper {
+          width: 80px;
+          height: 73px;
+          margin-bottom: 28px;
+        }
+
+        .benefits__text {
+          padding: 21px 0 0 0;
+        }
+      }
+
+      .food {
+        .benefits__icon-wrapper {
+          width: 73px;
+          height: 69px;
+          margin-bottom: 26px;
+        }
+
+        .benefits__text {
+          padding: 22px 0 0 0;
+        }
+      }
+
+      .souvenirs {
+        .benefits__icon-wrapper {
+          width: 77px;
+          height: 75px;
+          margin-bottom: 26px;
+          // margin-top: -3px;
+        }
+
+        .benefits__text {
+          padding: 24px 0 0 0;
+        }
+      }
     }
   }
 }
 
-.advantages__title {
-  color: rgba(51, 51, 51, 1);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: center;
-  padding: 0 18px 16px 18px;
-}
+// .advantages__title {
+//   color: rgba(51, 51, 51, 1);
+//   font-size: 14px;
+//   font-weight: 400;
+//   line-height: 21px;
+//   text-align: center;
+//   // padding: 0 18px 16px 18px;
+// }
 
 .true-city__wrapper {
   background-color: rgba(129, 179, 210, 1);

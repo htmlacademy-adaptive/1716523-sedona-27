@@ -9,14 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 38px 29px 32px 29px;
+    padding: 40px 29px 32px 29px;
   }
 
   &__title {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-    padding-bottom: 20px;
+    padding-bottom: 23px;
   }
 
   &__text {
@@ -47,6 +47,7 @@
     background-color: rgb(242, 241, 236);
     display: flex;
     justify-content: center;
+    margin-bottom: 37px;
   }
 
   &__map {
@@ -67,14 +68,30 @@
       text-transform: uppercase;
       min-width: 454px;
       min-height: 58px;
-      margin-bottom: 49px;
+      margin-bottom: 58px;
+    }
+
+    &__text-wrapper {
+      padding: 61px 0 40px 0;
+      max-width: 435px;
+      // margin: 0 auto;
     }
 
     &__title {
       font-size: 30px;
       font-weight: 700;
       line-height: 26px;
-      padding-bottom: 20px;
+      padding-bottom: 32px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &__text-wrapper {
+      padding: 61px 0 45px 0;
+    }
+
+    &__button {
+      margin-bottom: 66px;
     }
   }
 }
