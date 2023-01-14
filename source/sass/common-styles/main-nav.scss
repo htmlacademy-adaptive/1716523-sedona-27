@@ -31,7 +31,7 @@
     position: relative;
     border: none;
     padding: 0;
-    right: 20px;
+    right: 12px;
     width: 40px;
     height: 40px;
     background-color: inherit;
@@ -104,6 +104,10 @@
       // background-image: url(../img/icon-cross.svg);
       border: none;
       background-color: inherit;
+    }
+
+    .menu-link {
+      color: rgb(255, 255, 255);
     }
   }
 
