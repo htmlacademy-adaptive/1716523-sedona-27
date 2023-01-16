@@ -1,5 +1,5 @@
 .hero__img-wrapper {
-  background-image: url("../../img/triangle-mobile.svg"), url("../img/hero-image-mobile.jpg");
+  background-image: url("../img/triangle-mobile.svg"), url("../img/hero-image-mobile.jpg");
   background-color: rgb(129, 179, 210);
   min-height: 388px;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 
 @media screen and (min-width: $desktop) {
   .hero__img-wrapper {
-    background-image: url("../../img/triangle-desktop.svg"), url("../img/hero-img-desktop.jpg");
+    background-image: url("../img/triangle-desktop.svg"), url("../img/hero-img-desktop.jpg");
     background-color: rgb(129, 179, 210);
     background-repeat: no-repeat;
     background-position: 50% 100%, center;

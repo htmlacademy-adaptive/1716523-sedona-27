@@ -3,7 +3,7 @@
 .advantages {
   .true-city__wrapper {
     background-image: url("../img/adv-triangle-mobile.svg");
-    background-position: 0 0;
+    background-position: 0 -2px;
     background-repeat: no-repeat;
     padding-top: 70px;
     padding-bottom: 40px;
@@ -48,6 +48,10 @@
   &__item-wrapper {
     display: flex;
     flex-direction: column;
+  }
+
+  .adv-text-number-five {
+    padding: 0 31px;
   }
 
   &__text-wrapper {
@@ -187,6 +191,10 @@
       font-weight: 400;
       line-height: 21px;
     }
+
+    &__text--desktop {
+      display: none;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -243,6 +251,10 @@
     &__item-wrapper {
       display: flex;
       flex-direction: row;
+    }
+
+    .adv-text-number-five {
+      padding: 0;
     }
 
     &__text-wrapper {
@@ -416,6 +428,10 @@
       padding: 12px 0 24px 0;
     }
 
+    .adv-text-number-five {
+      padding: 0 15px;
+    }
+
     &__item-text {
       padding: 0 24px;
     }
@@ -441,6 +457,15 @@
     }
 
     .benefits {
+      &__text--desktop {
+        display: block;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        padding: 24px 0 0 0;
+      }
+
       &__text-wrapper {
         padding-top: 0;
         width: 300px;
@@ -514,4 +539,10 @@
   background-color: rgba(129, 179, 210, 1);
   color: rgb(255, 255, 255);
   text-align: center;
+}
+
+.souvenirs .benefits__text {
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
