@@ -1,7 +1,7 @@
 @import "../constants/colors.scss";
 
 .mobile-modal {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -73,6 +73,7 @@
 
 @media screen and (min-width: $tablet) {
   .mobile-modal {
+    display: none;
     width: 400px;
     min-height: 347px;
     margin: 0 auto;
