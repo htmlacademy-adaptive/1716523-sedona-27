@@ -1,6 +1,105 @@
 @import "../constants/colors.scss";
 
-.advantages {
+@media screen and (min-width: $mobile) {
+  .advantages {
+    &__list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__title {
+      padding: 0 18px 17px 18px;
+      color: rgba(51, 51, 51, 1);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: center;
+    }
+
+    &__item {
+      min-width: 284px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 37px 18px;
+      box-sizing: border-box;
+    }
+
+    &__item-img {
+      background-color: rgb(237, 191, 180);
+      align-self: center;
+      width: 100%;
+      height: auto;
+    }
+
+    &__item-text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+
+    &__item-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 11px 0 17px 0;
+    }
+
+    &__item-number::before {
+      content: "";
+      background-color: rgb(255, 255, 255);
+      width: 10px;
+      height: 1px;
+      margin-right: 5px;
+    }
+
+    &__item-number::after {
+      content: "";
+      background-color: rgb(255, 255, 255);
+      width: 10px;
+      height: 1px;
+      margin-left: 5px;
+    }
+
+    &__item-number--another-bcg-color::before {
+      content: "";
+      background-color: rgba(51, 51, 51, 1);
+      width: 10px;
+      height: 1px;
+      margin-right: 5px;
+    }
+
+    &__item-number--another-bcg-color::after {
+      content: "";
+      background-color: rgba(51, 51, 51, 1);
+      width: 10px;
+      height: 1px;
+      margin-right: 5px;
+    }
+  }
+
+  .adv-text-number-five {
+    padding: 0 31px;
+  }
+
+  .advantages__item-wrapper--border-bottom {
+    margin: 0 32px;
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
+  }
+
   .true-city__wrapper {
     background-image: url("../img/adv-triangle-mobile.svg");
     background-position: 0 -2px;
@@ -8,7 +107,6 @@
     padding-top: 70px;
     padding-bottom: 40px;
     min-height: 211px;
-    // background-size: 100% 30%;
   }
 
   .devils-bridge__wrapper {
@@ -19,127 +117,6 @@
 
   .devils-bridge__wrapper h3 {
     margin-top: 20px;
-  }
-
-  &__list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  &__title {
-    padding: 0 18px 17px 18px;
-    color: rgba(51, 51, 51, 1);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: center;
-  }
-
-  &__item {
-    min-width: 284px;
-    // min-height: 167px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__item-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .adv-text-number-five {
-    padding: 0 31px;
-  }
-
-  &__text-wrapper {
-    // min-height: 211px;
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    padding: 37px 18px;
-    box-sizing: border-box;
-  }
-
-  &__item--another-bcg-color {
-    background-color: $advantages-grey;
-
-    .advantages__item-number--another-bcg-color {
-      padding: 14px 0 18px 0;
-    }
-  }
-
-  &__item--another-bcg-color .advantages__text-wrapper {
-    // min-height: 165px;
-    padding: 24px 0;
-  }
-
-  .advantages__item-wrapper--border-bottom {
-    margin: 0 32px;
-    border-bottom: 1px solid rgba(214, 214, 214, 1);
-  }
-
-  &__item--another-bcg-color h3 {
-    margin-top: 0;
-  }
-
-  &__item--another-bcg-color p {
-    margin: 0;
-  }
-
-  &__item-img {
-    background-color: rgb(237, 191, 180);
-    align-self: center;
-    width: 100%;
-    height: auto;
-  }
-
-  &__item-text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-transform: uppercase;
-  }
-
-  &__item-number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 11px 0 17px 0;
-  }
-
-  &__item-number::before {
-    content: "";
-    background-color: rgb(255, 255, 255);
-    width: 10px;
-    height: 1px;
-    margin-right: 5px;
-  }
-
-  &__item-number::after {
-    content: "";
-    background-color: rgb(255, 255, 255);
-    width: 10px;
-    height: 1px;
-    margin-left: 5px;
-  }
-
-  &__item-number--another-bcg-color::before {
-    content: "";
-    background-color: rgba(51, 51, 51, 1);
-    width: 10px;
-    height: 1px;
-    margin-right: 5px;
-  }
-
-  &__item-number--another-bcg-color::after {
-    content: "";
-    background-color: rgba(51, 51, 51, 1);
-    width: 10px;
-    height: 1px;
-    margin-right: 5px;
   }
 
   .benefits {
@@ -191,7 +168,91 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  .advantages__item--another-bcg-color h3 {
+    margin-top: 0;
+  }
+
+  .advantages__item--another-bcg-color p {
+    margin: 0;
+  }
+
+  .advantages__item--another-bcg-color .advantages__text-wrapper {
+    padding: 24px 0;
+  }
+
+  .advantages__item--another-bcg-color {
+    background-color: $advantages-grey;
+
+    .advantages__item-number--another-bcg-color {
+      padding: 14px 0 18px 0;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .true-city,
+  .devils-bridge {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .true-city__wrapper,
+  .devils-bridge__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 54px 33px 27px 33px;
+    flex-direction: column;
+    width: 256px;
+  }
+
+  .devils-bridge__wrapper h3 {
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  .true-city__wrapper {
+    background-image: none;
+  }
+
+  .adv-text-number-five {
+    padding: 0;
+  }
+
+  .advantages__item--another-bcg-color {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    .advantages__item-wrapper {
+      max-width: 256px;
+    }
+
+    .advantages__text-wrapper {
+      padding: 52px 33px;
+      margin: 0;
+    }
+
+    .center-adv {
+      padding: 41px 39px;
+    }
+
+    h3 {
+      padding: 0 16px;
+    }
+
+    .advantages__item-number--another-bcg-color {
+      padding: 14px 0 24px 0;
+    }
+  }
+
+  .advantages {
+    &__item .devils-bridge {
+      flex-direction: row-reverse;
+    }
+
     &__title {
       padding: 0 124px 54px 124px;
     }
@@ -214,74 +275,12 @@
       padding: 13px 0 24px 0;
     }
 
-    .true-city,
-    .devils-bridge {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .devils-bridge {
-      flex-direction: row-reverse;
-    }
-
-    .true-city__wrapper,
-    .devils-bridge__wrapper {
-      display: flex;
-      align-items: center;
-      padding: 54px 33px 27px 33px;
-      flex-direction: column;
-      width: 256px;
-    }
-
-    .devils-bridge__wrapper h3 {
-      margin-top: 0;
-      padding: 0 20px;
-    }
-
-    .true-city__wrapper {
-      background-image: none;
-    }
-
     &__item-wrapper {
       display: flex;
       flex-direction: row;
     }
 
-    .adv-text-number-five {
-      padding: 0;
-    }
-
-    &__item--another-bcg-color {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 100%;
-
-      .advantages__item-wrapper {
-        max-width: 256px;
-      }
-
-      .advantages__text-wrapper {
-        padding: 52px 33px;
-        margin: 0;
-      }
-
-      .center-adv {
-        padding: 41px 39px;
-      }
-
-      h3 {
-        padding: 0 16px;
-      }
-
-      .advantages__item-number--another-bcg-color {
-        padding: 14px 0 24px 0;
-      }
-    }
-
-
-    .advantages__item-wrapper--border-bottom {
+    &__item-wrapper--border-bottom {
       margin: 0;
       border-bottom: none;
     }
@@ -290,110 +289,184 @@
       width: 100%;
       height: auto;
     }
+  }
 
+  .benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
 
-    .benefits {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+    &__item {
+      box-sizing: border-box;
+      min-height: 331px;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+    }
 
-      .housing {
-        .benefits__icon-wrapper {
-          width: 77px;
-          height: 72px;
-          margin-bottom: 25px;
-        }
+    &__text-wrapper {
+      width: 190px;
+      text-align: center;
+      padding: 0;
+    }
 
-        .benefits__text {
-          padding: 21px 11px 0 11px;
-        }
-      }
+    &__text {
+      padding-top: 24px;
+    }
 
-      .food {
-        .benefits__icon-wrapper {
-          width: 80px;
-          height: 68px;
-          margin-bottom: 26px;
-        }
+    &__icon-wrapper {
+      width: 73px;
+      height: 72px;
+      position: static;
+    }
 
-        .benefits__text {
-          padding: 22px 18px 0 17px;
-        }
-      }
+    &__icon {
+      width: 100%;
+      height: 100%;
+    }
 
-      .souvenirs {
-        .benefits__icon-wrapper {
-          width: 67px;
-          height: 75px;
-          margin-bottom: 14px;
-          margin-top: -3px;
-        }
-
-        .benefits__text {
-          padding: 24px 13px 0 9px;
-        }
-      }
-
-      &__item {
-        box-sizing: border-box;
-        min-height: 331px;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0;
-      }
-
-      &__text-wrapper {
-        width: 190px;
-        text-align: center;
-        padding: 0;
-      }
-
-      &__text {
-        padding-top: 24px;
-      }
-
-      &__icon-wrapper {
-        width: 73px;
-        height: 72px;
-        position: static;
-      }
-
-      &__icon {
-        width: 100%;
-        height: 100%;
-      }
-
-      &__title {
-        font-size: 21px;
-        font-weight: 700;
-        line-height: 26px;
-        margin: 0;
-      }
+    &__title {
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 26px;
+      margin: 0;
     }
   }
 
-  @media screen and (min-width: $desktop) {
-    .true-city__wrapper,
-    .devils-bridge__wrapper {
-      width: 400px;
+  .housing {
+    .benefits__icon-wrapper {
+      width: 77px;
+      height: 72px;
+      margin-bottom: 25px;
     }
 
-    .devils-bridge__wrapper h3 {
-      margin-top: 0;
-      padding: 0 60px;
+    .benefits__text {
+      padding: 21px 11px 0 11px;
+    }
+  }
+
+  .food {
+    .benefits__icon-wrapper {
+      width: 80px;
+      height: 68px;
+      margin-bottom: 26px;
     }
 
-    .devils-bridge__wrapper p {
-      padding: 0 50px;
+    .benefits__text {
+      padding: 22px 18px 0 17px;
+    }
+  }
+
+  .souvenirs {
+    .benefits__icon-wrapper {
+      width: 67px;
+      height: 75px;
+      margin-bottom: 14px;
+      margin-top: -3px;
     }
 
-    .advantages .advantages__item--another-bcg-color .center-adv {
-      padding: 41px 0 52px 0;
+    .benefits__text {
+      padding: 24px 13px 0 9px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .true-city__wrapper,
+  .devils-bridge__wrapper {
+    width: 400px;
+  }
+
+  .devils-bridge__wrapper h3 {
+    margin-top: 0;
+    padding: 0 60px;
+  }
+
+  .true-city__wrapper p {
+    padding: 0 15px;
+  }
+
+  .devils-bridge__wrapper p {
+    padding: 0 40px;
+  }
+
+  .adv-text-number-five {
+    padding: 0 15px;
+  }
+
+  .advantages__item--another-bcg-color .advantages__item-wrapper {
+    width: 400px;
+    max-width: none;
+  }
+
+  .advantages__item--another-bcg-color .advantages__text-wrapper {
+    padding: 63px 33px 41px 33px;
+  }
+
+  .advantages__item--another-bcg-color .center-adv {
+    padding: 52px 33px 41px 33px;
+  }
+
+  .advantages__item--another-bcg-color h3 {
+    padding: 0 90px;
+  }
+
+  .benefits {
+    &__text--desktop {
+      display: block;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      padding: 24px 0 0 0;
     }
 
+    &__text-wrapper {
+      padding-top: 0;
+      width: 300px;
+    }
+  }
+
+  .housing {
+    .benefits__icon-wrapper {
+      width: 80px;
+      height: 73px;
+      margin-bottom: 28px;
+    }
+
+    .benefits__text {
+      padding: 21px 0 0 0;
+    }
+  }
+
+  .food {
+    .benefits__icon-wrapper {
+      width: 73px;
+      height: 69px;
+      margin-bottom: 26px;
+    }
+
+    .benefits__text {
+      padding: 22px 0 0 0;
+    }
+  }
+
+  .souvenirs {
+    .benefits__icon-wrapper {
+      width: 77px;
+      height: 75px;
+      margin-bottom: 26px;
+    }
+
+    .benefits__text {
+      padding: 24px 0 0 0;
+    }
+  }
+
+  .advantages {
     &__title {
       padding: 0 124px 44px 124px;
     }
@@ -411,81 +484,12 @@
       padding: 12px 0 24px 0;
     }
 
-    .adv-text-number-five {
-      padding: 0 15px;
-    }
-
     &__item-text {
       padding: 0 24px;
     }
 
-    .advantages__item--another-bcg-color .advantages__item-wrapper {
-      width: 400px;
-      max-width: none;
-    }
-
-    .advantages__item--another-bcg-color .advantages__text-wrapper {
-      padding: 63px 33px 41px 33px;
-    }
-
-    .advantages__item--another-bcg-color .advantages__item-wrapper .center-adv {
-      padding: 52px 33px 41px 33px;
-    }
-
-    .advantages__item--another-bcg-color h3 {
-      padding: 0 90px;
-    }
-
-    .benefits {
-      &__text--desktop {
-        display: block;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
-        padding: 24px 0 0 0;
-      }
-
-      &__text-wrapper {
-        padding-top: 0;
-        width: 300px;
-      }
-
-      .housing {
-        .benefits__icon-wrapper {
-          width: 80px;
-          height: 73px;
-          margin-bottom: 28px;
-        }
-
-        .benefits__text {
-          padding: 21px 0 0 0;
-        }
-      }
-
-      .food {
-        .benefits__icon-wrapper {
-          width: 73px;
-          height: 69px;
-          margin-bottom: 26px;
-        }
-
-        .benefits__text {
-          padding: 22px 0 0 0;
-        }
-      }
-
-      .souvenirs {
-        .benefits__icon-wrapper {
-          width: 77px;
-          height: 75px;
-          margin-bottom: 26px;
-        }
-
-        .benefits__text {
-          padding: 24px 0 0 0;
-        }
-      }
+    &__item-img {
+      height: 100%;
     }
   }
 }
