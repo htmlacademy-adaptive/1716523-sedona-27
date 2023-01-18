@@ -552,7 +552,7 @@
 
   .review {
     &__title-wrapper {
-      margin-bottom: 37px;
+      margin-bottom: 66px;
     }
 
     &__title {
@@ -562,5 +562,100 @@
 
   .review-form {
     padding: 0 120px;
+
+    &__button-wrapper {
+      width: 768px;
+      margin: 0 auto;
+      margin-top: 9px;
+    }
+
+    &__button {
+      min-width: 384px;
+    }
+  }
+
+  .name-inputs {
+    border-right: 1px solid $form-line-color;
+    padding: 0;
+    padding-right: 64px;
+    margin-right: 0;
+
+    &__title {
+      padding-left: 63px;
+    }
+  }
+
+  .name-inputs input {
+    min-width: 430px;
+  }
+
+  .name-inputs::after {
+    display: none;
+  }
+
+  .contacts-inputs {
+    padding: 0;
+    padding-left: 63px;
+    margin: 0;
+
+    &__title {
+      text-align: start;
+      padding-left: 70px;
+    }
+  }
+
+  .impression-inputs {
+    padding-top: 56px;
+    margin-bottom: 26px;
+  }
+
+  .impression-title {
+    margin-bottom: 43px;
+  }
+
+  .impression-list {
+    margin-left: 37px;
+  }
+
+  .impression-item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  .impression-item {
+    margin: 0;
+  }
+
+  .attraction-inputs {
+    margin-bottom: 54px;
+    padding-bottom: 0;
+  }
+
+  .review-form .attraction-title {
+    padding: 0 275px;
+    margin-bottom: 60px;
+  }
+
+  .attraction-list {
+    margin: 0;
+    margin-left: 28px;
+  }
+
+  .attraction-item {
+    margin: 0;
+  }
+
+  .attraction-item:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .attraction-item:last-child {
+    margin-left: -22px;
+  }
+
+  .emotions-textarea {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
   }
 }
