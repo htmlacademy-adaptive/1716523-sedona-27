@@ -59,20 +59,24 @@
       <h2 class="review__title mobile-title text">
         Оставьте свой отзыв
       </h2>
-      <p class="review__text mobile-text">
+      <p class="review__text review__text--mobile mobile-text">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
+      <div class="review__text--tablet">
+        <p>Помогите нашим отелям стать лучше! оставьте отзыв о них,</p>
+        <p>а также о посещенных вами достопримечательностях</p>
+      </div>
     </div>
     <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="review-form__wrapper name-inputs">
         <h2 class="review-form__title name-inputs__title text">представьтесь:</h2>
-        <label class="review-form__label input-label" for="name">имя*:</label>
+        <label class="review-form__label input-label name-inputs__label" for="name">имя*:</label>
         <input class="review-form__input first-name-input" type="text" value="Петр" name="first-name" id="name">
 
-        <label class="review-form__label" for="last-name">фамилия*:</label>
+        <label class="review-form__label name-inputs__label" for="last-name">фамилия*:</label>
         <input class="review-form__input last-name-input" type="text" value="Пустота" name="second-name" id="last-name">
 
-        <label class="review-form__label" for="patronymic">отчество:</label>
+        <label class="review-form__label name-inputs__label" for="patronymic">отчество:</label>
         <input class="review-form__input patronymic-input" type="text" value="Викторович" name="fathers-name"
           id="patronymic">
 
