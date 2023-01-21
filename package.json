@@ -8,9 +8,12 @@
     "browser-sync": "2.27.7",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
+    "gulp-imagemin": "^8.0.0",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
+    "gulp-webp": "^4.0.1",
     "postcss": "8.3.11",
+    "postcss-csso": "^6.0.1",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
   },
@@ -18,8 +21,14 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
-    "start": "gulp"
+    "build": "gulp sprite && gulp copy && gulp styles && gulp images && gulp createWebp",
+    "start": "gulp",
+    "styles": "gulp styles",
+    "images": "gulp images",
+    "sprite": "gulp sprite",
+    "copy":  "gulp copy",
+    "createWebp": "npm run createWebp",
+    "testbuild": "npm run styles && npm run images && npm run sprite && npm run copy"
   },
   "browserslist": [
     "last 2 versions",

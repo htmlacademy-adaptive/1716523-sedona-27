@@ -1,10 +1,15 @@
 @import "../constants/colors.scss";
 
 .mobile-modal {
-  display: none;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto auto;
+  overflow: hidden;
+  background-color: rgba(242, 242, 242, 0.8);
+  top: 0;
+  left: 0;
 
   &__title {
     text-align: center;
@@ -45,6 +50,7 @@
 }
 
 .modal-error__button {
+  margin-left: 70px;
   width: 180px;
   min-height: 58px;
   background-color: $button-blue;
@@ -57,6 +63,10 @@
 
 .modal-error {
   min-height: 280px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
 }
 
 .modal-success {
