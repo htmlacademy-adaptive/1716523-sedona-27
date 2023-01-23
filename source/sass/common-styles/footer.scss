@@ -14,7 +14,7 @@
 
   &__list {
     display: flex;
-    margin-bottom: 37px;
+    margin-bottom: 42px;
   }
 
   &__item {
@@ -48,6 +48,24 @@
 
   &__copyright-link:hover {
     color: rgba(129, 179, 210, 1);
+  }
+
+  &__copyright-link:active {
+    color: rgba(179, 179, 179, 1);
+  }
+
+  &__link {
+    color: rgba(129, 179, 210, 1);
+    height: 48px;
+    display: block;
+  }
+
+  &__link:active {
+    opacity: 0.8;
+  }
+
+  &__icon:hover {
+    color: rgb(102, 158, 192);
   }
 }
 

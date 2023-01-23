@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="build/favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
@@ -223,6 +223,7 @@
   </div>
 
   <section class="mobile-modal">
+    <div class="mobile-modal__error-wrapper">
     <div class="modal-error">
       <div class="mobile-modal__text-wrapper error-text-wrapper">
         <h2 class="mobile-modal__title modal-error__title text">что-то пошло не так!</h2>
@@ -231,6 +232,8 @@
       </div>
       <button class="mobile-modal__button modal-error__button button" type="button">ок</button>
     </div>
+  </div>
+  <div class="mobile-modal__success-wrapper">
     <div class="modal-success">
       <div class="mobile-modal__text-wrapper success-text-wrapper">
         <h2 class="mobile-modal__title modal-success__title text">Ваш отзыв отправлен!</h2>
@@ -242,9 +245,10 @@
         <button class="mobile-modal__button success-button button-mobile button" type="button">закрыть окно</button>
       </div>
     </div>
+  </div>
   </section>
 
 </body>
 
 </html>
-<script src="./js/main.js"></script>
+<script src="./js/script.js"></script>

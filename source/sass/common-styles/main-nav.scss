@@ -10,6 +10,10 @@
 //   transform: scale(0);
 // }
 
+.main-nav.open .main-nav__burger {
+  background-color: transparent;
+}
+
 .main-nav.open .main-nav__burger::before {
   background-color: rgb(255, 255, 255);
   top: 0;
@@ -79,10 +83,6 @@
     top: 10px;
   }
 
-  &__toggle:hover {
-    cursor: pointer;
-  }
-
   &__toggle:hover .main-nav__burger {
     background-color: rgba(129, 179, 210, 0.5);
   }
@@ -133,6 +133,14 @@
   &__menu-item:hover {
     background-color: rgba(102, 158, 192, 1);
     cursor: pointer;
+  }
+
+  &__menu-item:active {
+    background-color: rgba(84, 150, 189, 1);
+  }
+
+  &__menu-item:active .menu-link {
+    opacity: 0.3;
   }
 
   .close-button {
