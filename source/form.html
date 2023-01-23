@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="build/favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="build/favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
-  <div class="content__wrapper">
+  <div class="page__body-wrapper">
     <header class="main-header">
       <a href="index.html" class="main-header__logo logo">
         <img src="img/header-logo.svg" alt="Логотип города Седона." class="main-header__logo-img" width="185"
@@ -39,6 +39,7 @@
             </li>
             <li class="main-nav__menu-item">
               <a href="https://up.htmlacademy.ru/" class="menu-link">html academy</a>
+              <div class="gradient"></div>
             </li>
           </ul>
         </div>
@@ -48,7 +49,7 @@
       <div class="form-hero__wrapper">
         <picture>
           <source media="(min-width: 768px)" srcset="img/catalog-hero-text-tablet.svg" width="457" height="78">
-          <img class="catalog-hero__img" src="./img/sedona-hero-catalog.svg" alt="Седона" width="229" height="39">
+          <img class="form-hero__img" src="./img/sedona-hero-catalog.svg" alt="Седона" width="229" height="39">
         </picture>
       </div>
       <h1 class="form-hero__title visually-hidden">
@@ -63,7 +64,7 @@
         <p class="review__text review__text--mobile mobile-text">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
-        <div class="review__text--tablet">
+        <div class="review__text-tablet">
           <p>Помогите нашим отелям стать лучше! оставьте отзыв о них,</p>
           <p>а также о посещенных вами достопримечательностях</p>
         </div>
@@ -224,28 +225,28 @@
 
   <section class="mobile-modal">
     <div class="mobile-modal__error-wrapper">
-    <div class="modal-error">
-      <div class="mobile-modal__text-wrapper error-text-wrapper">
-        <h2 class="mobile-modal__title modal-error__title text">что-то пошло не так!</h2>
-        <p class="mobile-modal__text modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
-          заполнить</p>
-      </div>
-      <button class="mobile-modal__button modal-error__button button" type="button">ок</button>
-    </div>
-  </div>
-  <div class="mobile-modal__success-wrapper">
-    <div class="modal-success">
-      <div class="mobile-modal__text-wrapper success-text-wrapper">
-        <h2 class="mobile-modal__title modal-success__title text">Ваш отзыв отправлен!</h2>
-        <p class="mobile-modal__text modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В
-          ближайшее время мы
-          опубликуем его на сайте.</p>
-      </div>
-      <div class="mobile-modal__button-wrapper">
-        <button class="mobile-modal__button success-button button-mobile button" type="button">закрыть окно</button>
+      <div class="modal-error">
+        <div class="mobile-modal__text-wrapper error-text-wrapper">
+          <h2 class="mobile-modal__title modal-error__title text">что-то пошло не так!</h2>
+          <p class="mobile-modal__text modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
+            заполнить</p>
+        </div>
+        <button class="mobile-modal__button modal-error__button button" type="button">ок</button>
       </div>
     </div>
-  </div>
+    <div class="mobile-modal__success-wrapper">
+      <div class="modal-success">
+        <div class="mobile-modal__text-wrapper success-text-wrapper">
+          <h2 class="mobile-modal__title modal-success__title text">Ваш отзыв отправлен!</h2>
+          <p class="mobile-modal__text modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В
+            ближайшее время мы
+            опубликуем его на сайте.</p>
+        </div>
+        <div class="mobile-modal__button-wrapper">
+          <button class="mobile-modal__button success-button button-mobile button" type="button">закрыть окно</button>
+        </div>
+      </div>
+    </div>
   </section>
 
 </body>

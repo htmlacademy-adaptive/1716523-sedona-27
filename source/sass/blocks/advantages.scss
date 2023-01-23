@@ -95,7 +95,7 @@
     padding: 0 31px;
   }
 
-  .advantages__item-wrapper--border-bottom {
+  .advantages__item-wrapper-border-bottom {
     margin: 0 32px;
     border-bottom: 1px solid rgba(214, 214, 214, 1);
   }
@@ -163,7 +163,7 @@
       line-height: 21px;
     }
 
-    &__text--desktop {
+    &__text-desktop {
       display: none;
     }
   }
@@ -280,7 +280,7 @@
       flex-direction: row;
     }
 
-    &__item-wrapper--border-bottom {
+    &__item-wrapper-border-bottom {
       margin: 0;
       border-bottom: none;
     }
@@ -415,7 +415,7 @@
   }
 
   .benefits {
-    &__text--desktop {
+    &__text-desktop {
       display: block;
       text-transform: uppercase;
       font-size: 14px;
