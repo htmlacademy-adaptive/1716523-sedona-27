@@ -104,6 +104,34 @@
     background-color: $form-input-color-hover;
   }
 
+  .first-name-input:active,
+  .last-name-input:active,
+  .patronymic-input:active {
+    background-color: rgb(255, 255, 255);
+    outline: 4px solid rgba(229, 229, 229, 1);
+    border: none;
+  }
+
+  .first-name-input:focus,
+  .last-name-input:focus,
+  .patronymic-input:focus {
+    background-color: rgb(255, 255, 255);
+    outline: 4px solid rgba(229, 229, 229, 1);
+    border: none;
+  }
+
+  .contact-input:active {
+    background-color: rgb(255, 255, 255);
+    outline: 4px solid rgba(229, 229, 229, 1);
+    border: none;
+  }
+
+  .contact-input:focus {
+    background-color: rgb(255, 255, 255);
+    outline: 4px solid rgba(229, 229, 229, 1);
+    border: none;
+  }
+
   // &__item {
   //   display: flex;
   //   align-items: center;
@@ -260,9 +288,22 @@
   background-color: $form-input-color-hover;
 }
 
+.impression-label:active .radio-mark {
+  background-color: rgba(213, 213, 213, 1);
+}
+
+.impression-label:active .radio-mark::before {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
 .attraction-label:hover .checkbox-mark {
   background-color: $form-input-color-hover;
 }
+
+.attraction-label:active .checkbox-mark {
+  background-color: rgba(213, 213, 213, 1);
+}
+
 
 // .impression-label:last-child {
 //   margin-bottom: 0;
