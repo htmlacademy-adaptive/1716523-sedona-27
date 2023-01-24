@@ -6,235 +6,251 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="build/favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a href="index.html" class="main-header__logo logo">
-      <img src="img/header-logo.svg" alt="Логотип города Седона." class="main-header__logo-img" width="185" height="96">
-    </a>
-    <nav class="main-nav" id="nav-toggle">
-      <button class="main-nav__toggle" type="button" id="burger">
-        <div class="main-nav__burger"></div>
-        <span class="visually-hidden">кнопка вызова меню навигации</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__menu-list">
-          <li class="main-nav__menu-item">
-            <a href="index.html" class="menu-link">главная</a>
-            </button>
-          </li>
-          <li class="main-nav__menu-item">
-            <a href="catalog.html" class="menu-link">фото и видео</a>
-          </li>
-          <li class="main-nav__menu-item">
-            <a href="form.html" class="menu-link">форма отзыва</a>
-          </li>
-          <li class="main-nav__menu-item">
-            <a href="https://up.htmlacademy.ru/" class="menu-link">html academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <section class="form-hero">
-    <div class="form-hero__wrapper">
-      <picture>
-        <source media="(min-width: 768px)" srcset="img/catalog-hero-text-tablet.svg" width="457" height="78">
-        <img class="catalog-hero__img" src="./img/sedona-hero-catalog.svg" alt="Седона" width="229" height="39">
-      </picture>
-    </div>
-    <h1 class="form-hero__title visually-hidden">
-      Форма отзыва о городе Седона.
-    </h1>
-  </section>
-  <section class="review">
-    <div class="review__title-wrapper">
-      <h2 class="review__title mobile-title text">
-        Оставьте свой отзыв
-      </h2>
-      <p class="review__text mobile-text">
-        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-      </p>
-    </div>
-    <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="review-form__wrapper name-inputs">
-        <h2 class="review-form__title name-inputs__title text">представьтесь:</h2>
-        <label class="review-form__label input-label" for="name">имя*:</label>
-        <input class="review-form__input first-name-input" type="text" value="Петр" name="first-name" id="name">
-
-        <label class="review-form__label" for="last-name">фамилия*:</label>
-        <input class="review-form__input last-name-input" type="text" value="Пустота" name="second-name" id="last-name">
-
-        <label class="review-form__label" for="patronymic">отчество:</label>
-        <input class="review-form__input patronymic-input" type="text" value="Викторович" name="fathers-name"
-          id="patronymic">
-
-      </div>
-      <div class="review-form__wrapper contacts-inputs">
-        <h2 class="review-form__title contacts-inputs__title text">
-          Контактная информация:
-        </h2>
-        <label class="review-form__label contacts-inputs__label" for="phone">Контактный телефон*:</label>
-        <input class="review-form__input contact-input phone-input" type="number" placeholder="Введите телефон"
-          id="phone" name="tel">
-
-        <label class=" review-form__label contacts-inputs__label" for="email">Электронная почта*:</label>
-        <input class="review-form__input contact-input email-input" type="email" placeholder="Введите e-mail" id="email"
-          name="mail">
-
-      </div>
-      <div class="review-form__wrapper impression-inputs">
-        <h2 class="review-form__title impression-inputs__title text">
-          Ваше общее впечатление:
-        </h2>
-        <ul class="review-form__list impression-list">
-          <li class="review-form__item impression-item">
-            <label class="review-form__label impression-label" for="positive">
-              <input class="review-form__input impression-input visually-hidden" type="radio" name="impression"
-                id="positive" value="положительное" checked>
-              <span class="radio-mark"></span>
-              <span class="impression-text">Скорее положительное</span>
-            </label>
-          </li>
-          <li class="review-form__item impression-item">
-
-            <label class="review-form__label impression-label" for="negative">
-              <input class="review-form__input impression-input visually-hidden" type="radio" name="impression"
-                id="negative" value="отрицательное">
-              <span class="radio-mark"></span>
-              <span class="impression-text">Скорее отрицательное</span>
-            </label>
-          </li>
-          <li class="review-form__item impression-item">
-            <label class="review-form__label impression-label" for="difficult">
-              <input class="review-form__input impression-input visually-hidden" type="radio" name="impression"
-                id="difficult" value="затрудняюсь">
-              <span class="radio-mark"></span>
-              <span class="impression-text">Затрудняюсь ответить</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-      <div class="review-form__wrapper attraction-inputs">
-        <h2 class="review-form__title attraction-title text">посещенные достопримечательности:</h2>
-        <ul class="review-form__list attraction-list">
-          <li class="review-form__item attraction-item">
-            <label class="review-form__label attraction-label" for="devils-bridge">
-              <input class="review-form__input attraction-input visually-hidden" type="checkbox" name="bridge"
-                id="devils-bridge" checked>
-              <span class="checkbox-mark"></span>
-              <span class="attraction-text">Мост Дьявола</span>
-            </label>
-          </li>
-          <li class="review-form__item attraction-item">
-            <label class="review-form__label attraction-label" for="mountain">
-              <input class="review-form__input attraction-input visually-hidden" type="checkbox" name="mountain-bell"
-                id="mountain" checked>
-              <span class="checkbox-mark"></span>
-              <span class="attraction-text">Гора-Колокол</span>
-            </label>
-          </li>
-          <li class="review-form__item attraction-item">
-            <label class="review-form__label attraction-label" for="park">
-              <input class="review-form__input attraction-input visually-hidden" type="checkbox" name="park" id="park"
-                checked>
-              <span class="checkbox-mark"></span>
-              <span class="attraction-text">Слайд-парк</span>
-            </label>
-          </li>
-          <li class="review-form__item attraction-item">
-            <label class="review-form__label attraction-label" for="red-rocks">
-              <input class="review-form__input attraction-input visually-hidden" type="checkbox" name="rocks"
-                id="red-rocks">
-              <span class="checkbox-mark"></span>
-              <span class="attraction-text">Красные-Скалы</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-      <div class="review-form__wrapper emotions-inputs">
-        <h2 class="review-form__title emotions-title text">Опишите свои эмоции:</h2>
-        <textarea class="review-form__input emotions-textarea" name="emotions" id="your-emotions"
-          placeholder="Опишите подробно все свои восторги "></textarea>
-        <label class="review-form__label emotions-label" for="your-emotions"></label>
-      </div>
-      <div class="review-form__button-wrapper">
-        <button class="review-form__button button-mobile button" type="submit">отправить отзыв
-        </button>
-        <span class="review-form__required-text">* — обязательные поля</span>
-      </div>
-    </form>
-  </section>
-
-
-  <footer class="footer">
-    <h2 class="footer__title text">#visitsedona</h2>
-    <ul class="footer__list socials">
-      <li class="footer__item">
-        <a class="footer__link" href="#">
-          <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
-            viewBox="0 0 48 48">
-            <use href="img/sprite.svg#vk-icon"></use>
-          </svg>
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#">
-          <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
-            viewBox="0 0 48 48">
-            <use href="img/sprite.svg#telegramm-icon"></use>
-          </svg>
-          <span class="visually-hidden">Телеграмм</span>
-        </a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#">
-          <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
-            viewBox="0 0 48 48">
-            <use href="img/sprite.svg#you-tube-icon"></use>
-          </svg>
-          <span class="visually-hidden">you-tube</span>
-        </a>
-      </li>
-    </ul>
-    <div class="footer__copyright-wrapper">
-      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">разработано
-        <svg class="footer__copyright-logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35"
-          fill="currentColor" viewBox="0 0 27 35">
-          <use href="img/sprite.svg#html-academy-icon"></use>
-        </svg>
+  <div class="page__body-wrapper">
+    <header class="main-header">
+      <a href="index.html" class="main-header__logo logo">
+        <img src="img/header-logo.svg" alt="Логотип города Седона." class="main-header__logo-img" width="185"
+          height="96">
       </a>
-    </div>
-  </footer>
+      <nav class="main-nav" id="nav-toggle">
+        <button class="main-nav__toggle" type="button" id="burger">
+          <div class="main-nav__burger"></div>
+          <span class="visually-hidden">кнопка вызова меню навигации</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-item">
+              <a href="index.html" class="menu-link">главная</a>
+              </button>
+            </li>
+            <li class="main-nav__menu-item">
+              <a href="catalog.html" class="menu-link">фото и видео</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a href="form.html" class="menu-link current">форма отзыва</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a href="https://up.htmlacademy.ru/" class="menu-link">html academy</a>
+              <div class="gradient"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="form-hero">
+      <div class="form-hero__wrapper">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/catalog-hero-text-tablet.svg" width="457" height="78">
+          <img class="form-hero__img" src="./img/sedona-hero-catalog.svg" alt="Седона" width="229" height="39">
+        </picture>
+      </div>
+      <h1 class="form-hero__title visually-hidden">
+        Форма отзыва о городе Седона.
+      </h1>
+    </section>
+    <section class="review">
+      <div class="review__title-wrapper">
+        <h2 class="review__title mobile-title text">
+          Оставьте свой отзыв
+        </h2>
+        <p class="review__text review__text--mobile mobile-text">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
+        <div class="review__text-tablet">
+          <p>Помогите нашим отелям стать лучше! оставьте отзыв о них,</p>
+          <p>а также о посещенных вами достопримечательностях</p>
+        </div>
+      </div>
+      <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="review-form__wrapper name-inputs">
+          <h2 class="review-form__title name-inputs__title text">представьтесь:</h2>
+          <label class="review-form__label input-label name-inputs__label" for="name">имя*:</label>
+          <input class="review-form__input first-name-input" type="text" value="Петр" name="first-name" id="name">
 
-  <section class="mobile-modal modal-error">
-    <div class="mobile-modal__text-wrapper error-text-wrapper">
-      <h2 class="mobile-modal__title modal-error__title text">что-то пошло не так!</h2>
-      <p class="mobile-modal__text modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
-        заполнить</p>
+          <label class="review-form__label name-inputs__label" for="last-name">фамилия*:</label>
+          <input class="review-form__input last-name-input" type="text" value="Пустота" name="second-name"
+            id="last-name">
+
+          <label class="review-form__label name-inputs__label" for="patronymic">отчество:</label>
+          <input class="review-form__input patronymic-input" type="text" value="Викторович" name="fathers-name"
+            id="patronymic">
+
+        </div>
+        <div class="review-form__wrapper contacts-inputs">
+          <h2 class="review-form__title contacts-inputs__title text">
+            Контактная информация:
+          </h2>
+          <label class="review-form__label contacts-inputs__label" for="phone">Контактный телефон*:</label>
+          <input class="review-form__input contact-input phone-input" type="number" placeholder="Введите телефон"
+            id="phone" name="tel">
+
+          <label class=" review-form__label contacts-inputs__label" for="email">Электронная почта*:</label>
+          <input class="review-form__input contact-input email-input" type="email" placeholder="Введите e-mail"
+            id="email" name="mail">
+
+        </div>
+        <div class="review-form__wrapper impression-inputs">
+          <h2 class="review-form__title impression-title text">
+            Ваше общее впечатление:
+          </h2>
+          <ul class="review-form__list impression-list">
+            <li class="review-form__item impression-item">
+              <label class="review-form__label impression-label" for="positive">
+                <input class="review-form__input impression-input visually-hidden" type="radio" name="impression"
+                  id="positive" value="положительное" checked>
+                <span class="radio-mark"></span>
+                <span class="impression-text">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="review-form__item impression-item">
+
+              <label class="review-form__label impression-label" for="negative">
+                <input class="review-form__input impression-input visually-hidden" type="radio" name="impression"
+                  id="negative" value="отрицательное">
+                <span class="radio-mark"></span>
+                <span class="impression-text">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="review-form__item impression-item">
+              <label class="review-form__label impression-label" for="difficult">
+                <input class="review-form__input impression-input visually-hidden" type="radio" name="impression"
+                  id="difficult" value="затрудняюсь">
+                <span class="radio-mark"></span>
+                <span class="impression-text">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="review-form__wrapper attraction-inputs">
+          <h2 class="review-form__title attraction-title text">посещенные достопримечательности:</h2>
+          <ul class="review-form__list attraction-list">
+            <li class="review-form__item attraction-item">
+              <label class="review-form__label attraction-label" for="devils-bridge">
+                <input class="review-form__input attraction-input visually-hidden" type="checkbox" name="bridge"
+                  id="devils-bridge" checked>
+                <span class="checkbox-mark"></span>
+                <span class="attraction-text">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="review-form__item attraction-item">
+              <label class="review-form__label attraction-label" for="mountain">
+                <input class="review-form__input attraction-input visually-hidden" type="checkbox" name="mountain-bell"
+                  id="mountain" checked>
+                <span class="checkbox-mark"></span>
+                <span class="attraction-text">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="review-form__item attraction-item">
+              <label class="review-form__label attraction-label" for="park">
+                <input class="review-form__input attraction-input visually-hidden" type="checkbox" name="park" id="park"
+                  checked>
+                <span class="checkbox-mark"></span>
+                <span class="attraction-text">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="review-form__item attraction-item">
+              <label class="review-form__label attraction-label" for="red-rocks">
+                <input class="review-form__input attraction-input visually-hidden" type="checkbox" name="rocks"
+                  id="red-rocks">
+                <span class="checkbox-mark"></span>
+                <span class="attraction-text">Красные-скалы</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="review-form__wrapper emotions-inputs">
+          <h2 class="review-form__title emotions-title text">Опишите свои эмоции:</h2>
+          <textarea class="review-form__input emotions-textarea" name="emotions" id="your-emotions"
+            placeholder="Опишите подробно все свои восторги "></textarea>
+          <label class="review-form__label emotions-label" for="your-emotions"></label>
+        </div>
+        <div class="review-form__button-wrapper">
+          <button class="review-form__button button-mobile button" type="submit">отправить отзыв
+          </button>
+          <span class="review-form__required-text">* — обязательные поля</span>
+        </div>
+      </form>
+    </section>
+
+
+    <footer class="footer">
+      <h2 class="footer__title text">#visitsedona</h2>
+      <ul class="footer__list socials">
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
+              viewBox="0 0 48 48">
+              <use href="img/sprite.svg#vk-icon"></use>
+            </svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
+              viewBox="0 0 48 48">
+              <use href="img/sprite.svg#telegramm-icon"></use>
+            </svg>
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
+              viewBox="0 0 48 48">
+              <use href="img/sprite.svg#you-tube-icon"></use>
+            </svg>
+            <span class="visually-hidden">you-tube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright-wrapper">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">разработано
+          <svg class="footer__copyright-logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35"
+            fill="currentColor" viewBox="0 0 27 35">
+            <use href="img/sprite.svg#html-academy-icon"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <section class="mobile-modal">
+    <div class="mobile-modal__error-wrapper">
+      <div class="modal-error">
+        <div class="mobile-modal__text-wrapper error-text-wrapper">
+          <h2 class="mobile-modal__title modal-error__title text">что-то пошло не так!</h2>
+          <p class="mobile-modal__text modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
+            заполнить</p>
+        </div>
+        <button class="mobile-modal__button modal-error__button button" type="button">ок</button>
+      </div>
     </div>
-    <button class="mobile-modal__button modal-error__button button" type="button">ок</button>
-  </section>
-  <section class="mobile-modal modal-success">
-    <div class="mobile-modal__text-wrapper success-text-wrapper">
-      <h2 class="mobile-modal__title modal-success__title text">Ваш отзыв отправлен!</h2>
-      <p class="mobile-modal__text modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В
-        ближайшее время мы
-        опубликуем его на сайте.</p>
-    </div>
-    <div class="mobile-modal__button-wrapper">
-      <button class="mobile-modal__button success-button button-mobile button" type="button">закрыть окно</button>
+    <div class="mobile-modal__success-wrapper">
+      <div class="modal-success">
+        <div class="mobile-modal__text-wrapper success-text-wrapper">
+          <h2 class="mobile-modal__title modal-success__title text">Ваш отзыв отправлен!</h2>
+          <p class="mobile-modal__text modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В
+            ближайшее время мы
+            опубликуем его на сайте.</p>
+        </div>
+        <div class="mobile-modal__button-wrapper">
+          <button class="mobile-modal__button success-button button-mobile button" type="button">закрыть окно</button>
+        </div>
+      </div>
     </div>
   </section>
 
 </body>
 
 </html>
-<script src="./js/main.js"></script>
+<script src="./js/script.js"></script>

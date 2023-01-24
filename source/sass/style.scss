@@ -71,7 +71,7 @@ img {
   }
 }
 
-.content__wrapper {
+.page__body-wrapper {
   max-width: 1200px;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
@@ -85,25 +85,19 @@ img {
   border: none;
 }
 
+.button:hover {
+  background-color: rgba(102, 158, 192, 1);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: rgba(84, 150, 189, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .text {
   text-transform: uppercase;
 }
-
-// @media screen and (min-width: $mobile) {
-//   .page__body {
-//     min-width: $mobile;
-//     max-width: $tablet;
-//     margin: 0 auto;
-//   }
-// }
-
-// @media screen and (min-width: $tablet) {
-//   .page__body {
-//     min-width: $tablet;
-//     max-width: $desktop;
-//     margin: 0 auto;
-//   }
-// }
 
 @media screen and (min-width: $desktop) {
   .page__body {

@@ -6,6 +6,7 @@
     background-position: bottom, center;
     min-height: 160px;
     background-repeat: no-repeat;
+    margin-bottom: 38px;
   }
 
   &__img {
@@ -21,6 +22,7 @@
       background-position: bottom, center;
       background-repeat: no-repeat;
       min-height: 288px;
+      margin-bottom: 65px;
     }
 
     &__img {
@@ -36,6 +38,13 @@
       background-color: $advantages-blue;
       background-position: bottom, center;
       background-repeat: no-repeat;
+      min-height: 301px;
+      margin-bottom: 115px;
+    }
+
+    .form-hero__img {
+      margin: 0 auto;
+      padding-top: 101px;
     }
   }
 }
