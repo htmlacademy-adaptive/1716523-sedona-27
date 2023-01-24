@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import minify from 'html-minifier';
 
 // Styles
 
@@ -29,7 +30,7 @@ csso()
 
 // HTML
 
-const html = () => {
+export const html = () => {
 return gulp.src('source/*.html')
 .pipe(gulp.dest('build'));
 }
