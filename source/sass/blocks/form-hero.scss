@@ -1,20 +1,25 @@
-.form-hero {
-  &__wrapper {
-    background-image: url("../img/triangle-mobile.svg"), url("../img/catalog-hero-bcg.jpg");
-    background-size: contain, cover;
-    background-color: $advantages-blue;
-    background-position: bottom, center;
-    min-height: 160px;
-    background-repeat: no-repeat;
-    margin-bottom: 38px;
-  }
 
-  &__img {
-    margin: 0 auto;
-    padding-top: 50px;
-  }
+@media screen and (min-width: $mobile) {
+  .form-hero {
+    &__wrapper {
+      background-image: url("../img/triangle-mobile.svg"), url("../img/catalog-hero-bcg.jpg");
+      background-size: contain, cover;
+      background-color: $advantages-blue;
+      background-position: bottom, center;
+      min-height: 160px;
+      background-repeat: no-repeat;
+      margin-bottom: 38px;
+    }
 
-  @media screen and (min-width: $tablet) {
+    &__img {
+      margin: 0 auto;
+      padding-top: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .form-hero {
     &__wrapper {
       background-image: url("../img/triangle-tablet.svg"), url("../img/cat-hero-img-tablet.jpg");
       background-size: contain, cover;
@@ -30,8 +35,10 @@
       padding-top: 95px;
     }
   }
+}
 
-  @media screen and (min-width: $desktop) {
+@media screen and (min-width: $desktop) {
+  .form-hero {
     &__wrapper {
       background-image: url("../img/triangle-desktop.svg"), url("../img/cat-hero-img-desktop.jpg");
       background-size: contain, cover;
@@ -42,9 +49,10 @@
       margin-bottom: 115px;
     }
 
-    .form-hero__img {
+    &__img {
       margin: 0 auto;
       padding-top: 101px;
+      padding-bottom: 121px;
     }
   }
 }
