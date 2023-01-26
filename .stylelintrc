@@ -8,5 +8,5 @@
 
   "ignoreFiles": [
     "build/**"
-]
+  ]
 }

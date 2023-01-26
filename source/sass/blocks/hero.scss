@@ -1,5 +1,5 @@
 .hero__img-wrapper {
-  background-image: url("../img/triangle-mobile.svg"), url("../img/hero-image-mobile.jpg");
+  background-image: url("../img/triangle-mobile.svg"), image-set(url("../img/hero-image-mobile.jpg") 1x, url("../img/hero-index-mobile-retina.jpg") 2x);
   background-color: rgb(129, 179, 210);
   min-height: 388px;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 
 @media screen and (min-width: $tablet) {
   .hero__img-wrapper {
-    background-image: url("../img/triangle-tablet.svg"), url("../img/hero-img-tablet.jpg");
+    background-image: url("../img/triangle-tablet.svg"), image-set(url("../img/hero-img-tablet.jpg") 1x, url("../img/hero-index-tablet-retina.jpg") 2x);
     background-color: rgb(129, 179, 210);
     background-repeat: no-repeat;
     background-position: 0 100%, center;
@@ -46,7 +46,7 @@
 
 @media screen and (min-width: $desktop) {
   .hero__img-wrapper {
-    background-image: url("../img/triangle-desktop.svg"), url("../img/hero-img-desktop.jpg");
+    background-image: url("../img/triangle-desktop.svg"), image-set(url("../img/hero-img-desktop.jpg") 1x, url("../img/hero-index-desktop-retina.jpg") 2x);
     background-color: rgb(129, 179, 210);
     background-repeat: no-repeat;
     background-position: 50% 100%, center;

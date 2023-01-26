@@ -119,55 +119,6 @@
     margin-top: 20px;
   }
 
-  .benefits {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 23px 18px 18px 18px;
-
-    &__item {
-      position: relative;
-      margin-bottom: 27px;
-    }
-
-    &__icon-wrapper {
-      width: 40px;
-      height: 40px;
-      position: absolute;
-    }
-
-    &__icon {
-      width: 100%;
-      height: 100%;
-    }
-
-    &__text-wrapper {
-      text-align: left;
-      width: 237px;
-      padding-left: 47px;
-    }
-
-    &__title {
-      margin-bottom: 16px;
-      margin-top: 7px;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 26px;
-    }
-
-    &__text {
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-    }
-
-    &__text-desktop {
-      display: none;
-    }
-  }
-
   .advantages__item--another-bcg-color h3 {
     margin-top: 0;
   }
@@ -290,88 +241,6 @@
       height: auto;
     }
   }
-
-  .benefits {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0;
-
-    &__item {
-      box-sizing: border-box;
-      min-height: 331px;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 0;
-    }
-
-    &__text-wrapper {
-      width: 190px;
-      text-align: center;
-      padding: 0;
-    }
-
-    &__text {
-      padding-top: 24px;
-    }
-
-    &__icon-wrapper {
-      width: 73px;
-      height: 72px;
-      position: static;
-    }
-
-    &__icon {
-      width: 100%;
-      height: 100%;
-    }
-
-    &__title {
-      font-size: 21px;
-      font-weight: 700;
-      line-height: 26px;
-      margin: 0;
-    }
-  }
-
-  .housing {
-    .benefits__icon-wrapper {
-      width: 77px;
-      height: 72px;
-      margin-bottom: 25px;
-    }
-
-    .benefits__text {
-      padding: 21px 11px 0 11px;
-    }
-  }
-
-  .food {
-    .benefits__icon-wrapper {
-      width: 80px;
-      height: 68px;
-      margin-bottom: 26px;
-    }
-
-    .benefits__text {
-      padding: 22px 18px 0 17px;
-    }
-  }
-
-  .souvenirs {
-    .benefits__icon-wrapper {
-      width: 67px;
-      height: 75px;
-      margin-bottom: 14px;
-      margin-top: -3px;
-    }
-
-    .benefits__text {
-      padding: 24px 13px 0 9px;
-    }
-  }
 }
 
 @media screen and (min-width: $desktop) {
@@ -414,58 +283,6 @@
     padding: 0 90px;
   }
 
-  .benefits {
-    &__text-desktop {
-      display: block;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-      padding: 24px 0 0 0;
-    }
-
-    &__text-wrapper {
-      padding-top: 0;
-      width: 300px;
-    }
-  }
-
-  .housing {
-    .benefits__icon-wrapper {
-      width: 80px;
-      height: 73px;
-      margin-bottom: 28px;
-    }
-
-    .benefits__text {
-      padding: 21px 0 0 0;
-    }
-  }
-
-  .food {
-    .benefits__icon-wrapper {
-      width: 73px;
-      height: 69px;
-      margin-bottom: 26px;
-    }
-
-    .benefits__text {
-      padding: 22px 0 0 0;
-    }
-  }
-
-  .souvenirs {
-    .benefits__icon-wrapper {
-      width: 77px;
-      height: 75px;
-      margin-bottom: 26px;
-    }
-
-    .benefits__text {
-      padding: 24px 0 0 0;
-    }
-  }
-
   .advantages {
     &__title {
       padding: 0 124px 44px 124px;
@@ -504,10 +321,4 @@
   background-color: rgba(129, 179, 210, 1);
   color: rgb(255, 255, 255);
   text-align: center;
-}
-
-.souvenirs .benefits__text {
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
 }
