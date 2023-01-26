@@ -1,7 +1,7 @@
 @import "../constants/colors.scss";
 
 .catalog-hero {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   &__wrapper {
     background-image: url("../img/triangle-mobile.svg"), url("../img/catalog-hero-bcg.jpg");
@@ -41,6 +41,13 @@
       background-color: $advantages-blue;
       background-position: bottom, center;
       background-repeat: no-repeat;
+      margin-bottom: 61px;
+    }
+
+    &__img {
+      margin: 0 auto;
+      padding-top: 101px;
+      padding-bottom: 121px;
     }
   }
 }
