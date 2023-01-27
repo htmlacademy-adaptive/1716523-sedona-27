@@ -148,17 +148,18 @@
     width: 100%;
     height: auto;
   }
+}
 
-  &__img-wrapper::after {
-    content: "";
-    background-image: url("../img/video-triangle.svg");
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 48px;
-    height: 54px;
-  }
+.products-mobile__img-triangle {
+  content: "";
+  background-image: url("../img/video-triangle.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 54px;
+  display: block;
 }
 
 .mobile-title {

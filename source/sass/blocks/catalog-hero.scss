@@ -1,10 +1,8 @@
 @import "../constants/colors.scss";
-
+/* stylelint-disable */
 .catalog-hero {
-  // margin-bottom: 30px;
-
   &__wrapper {
-    background-image: url("../img/triangle-mobile.svg"), url("../img/catalog-hero-bcg.jpg");
+    background-image: url("../img/triangle-mobile.svg"), image-set(url("../img/catalog-hero-bcg.jpg") 1x, url("../img/hero-form-mobile-retina.jpg") 2x);
     background-size: contain, cover;
     background-color: $advantages-blue;
     background-position: bottom, center;
@@ -19,7 +17,7 @@
 
   @media screen and (min-width: $tablet) {
     &__wrapper {
-      background-image: url("../img/triangle-tablet.svg"), url("../img/cat-hero-img-tablet.jpg");
+      background-image: url("../img/triangle-tablet.svg"), image-set(url("../img/cat-hero-img-tablet.jpg") 1x, url("../img/hero-form-tablet-retina.png") 2x);
       background-size: contain, cover;
       background-color: $advantages-blue;
       background-position: bottom, center;
@@ -36,7 +34,7 @@
 
   @media screen and (min-width: $desktop) {
     &__wrapper {
-      background-image: url("../img/triangle-desktop.svg"), url("../img/cat-hero-img-desktop.jpg");
+      background-image: url("../img/triangle-desktop.svg"), image-set(url("../img/cat-hero-img-desktop.jpg") 1x, url("../img/hero-form-desktop-retina.png") 2x);
       background-size: contain, cover;
       background-color: $advantages-blue;
       background-position: bottom, center;

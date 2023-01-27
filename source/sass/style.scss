@@ -13,13 +13,12 @@
 @import "./blocks/products-mobile.scss";
 @import "./blocks/catalog-hero.scss";
 @import "./blocks/form-hero.scss";
-@import "./blocks/review.scss";
+@import "./blocks/review-form.scss";
 @import "./blocks/mobile-modal.scss";
-
-body {
-  background: rgb(255, 255, 255);
-  margin: 0;
-}
+@import "./blocks/page-body.scss";
+@import "./blocks/button.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/review.scss";
 
 h1,
 h2,
@@ -51,56 +50,6 @@ img {
   display: block;
 }
 
-.page__body {
-  @media screen and (min-width: $mobile) {
-    min-width: $mobile;
-    max-width: $tablet;
-    margin: 0 auto;
-  }
-
-  @media screen and (min-width: $tablet) {
-    min-width: $tablet;
-    max-width: $desktop;
-    margin: 0 auto;
-  }
-
-  @media screen and (min-width: $desktop) {
-    min-width: $desktop;
-    margin: 0 auto;
-    background-color: rgb(231, 229, 229);
-  }
-}
-
-.page__body-wrapper {
-  max-width: 1200px;
-  background-color: rgb(255, 255, 255);
-  margin: 0 auto;
-
-  @media screen and (min-width: $desktop) {
-    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-  }
-}
-
-.button {
-  border: none;
-}
-
-.button:hover {
-  background-color: rgba(102, 158, 192, 1);
-  cursor: pointer;
-}
-
-.button:active {
-  background-color: rgba(84, 150, 189, 1);
-  color: rgba(255, 255, 255, 0.3);
-}
-
 .text {
   text-transform: uppercase;
-}
-
-@media screen and (min-width: $desktop) {
-  .page__body {
-    min-width: $desktop;
-  }
 }
