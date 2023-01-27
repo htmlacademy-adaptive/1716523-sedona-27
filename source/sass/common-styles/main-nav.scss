@@ -31,6 +31,10 @@
   background-color: rgb(255, 255, 255, 0.6);
 }
 
+.main-nav.close .main-nav__wrapper {
+  display: none;
+}
+
 .main-nav {
   &__toggle {
     position: relative;

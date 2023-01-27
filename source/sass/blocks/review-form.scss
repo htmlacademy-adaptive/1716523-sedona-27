@@ -227,6 +227,14 @@
   content: "";
 }
 
+.impression-input:focus + .radio-mark {
+  outline: 2px solid rgb(0, 0, 0);
+}
+
+.attraction-input:focus + .checkbox-mark {
+  outline: 2px solid rgb(0, 0, 0);
+}
+
 .attraction-input[type="checkbox"]:checked + .checkbox-mark::before,
 .attraction-input[type="checkbox"]:checked + .checkbox-mark::after {
   position: absolute;
@@ -402,7 +410,7 @@
   }
 
   .attraction-text {
-    max-width: 120px;
+    max-width: 130px;
     overflow-wrap: break-word;
   }
 

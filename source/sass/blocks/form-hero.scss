@@ -41,7 +41,7 @@
   .form-hero {
     &__wrapper {
       background-image: url("../img/triangle-desktop.svg"),
-        image-set(url("../img/cat-hero-img-desktop.jpg") 1x, url("../img/hero-form-desktop-retina.png") 2x );
+        image-set(url("../img/cat-hero-img-desktop.jpg") 1x, url("../img/hero-form-desktop-retina.png") 2x);
       background-size: contain, cover;
       background-color: $advantages-blue;
       background-position: bottom, center;
