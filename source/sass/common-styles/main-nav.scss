@@ -149,7 +149,7 @@
     background-color: rgba(84, 150, 189, 1);
   }
 
-  &__menu-item:active .menu-link {
+  &__menu-item:active .main-nav__menu-link {
     opacity: 0.3;
   }
 
@@ -161,7 +161,7 @@
     background-color: inherit;
   }
 
-  .menu-link {
+  .main-nav__menu-link {
     color: rgb(255, 255, 255);
   }
 
@@ -184,7 +184,7 @@
     position: unset;
     width: 100%;
 
-    .menu-link {
+    .main-nav__menu-link {
       color: rgba(0, 0, 0, 1);
     }
 
@@ -220,11 +220,11 @@
       cursor: pointer;
     }
 
-    &__menu-item:hover .menu-link {
+    &__menu-item:hover .main-nav__menu-link {
       color: rgba(129, 179, 210, 1);
     }
 
-    &__menu-item:active .menu-link {
+    &__menu-item:active .main-nav__menu-link {
       color: rgba(0, 0, 0, 0.4);
     }
 
@@ -242,7 +242,7 @@
       display: none;
     }
 
-    .current {
+    .main-nav__menu-link--current {
       color: rgba(118, 99, 87, 1);
     }
   }
@@ -250,10 +250,6 @@
 
 @media screen and (min-width: $desktop) {
   .main-nav {
-    &__menu-list {
-      padding: 0 44px 0 44px;
-    }
-
     &__menu-item:nth-child(2) {
       margin-right: 240px;
     }

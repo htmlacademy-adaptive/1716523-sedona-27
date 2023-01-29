@@ -1,0 +1,15 @@
+@media screen and (min-width: $mobile) {
+  .mobile-title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .mobile-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+}

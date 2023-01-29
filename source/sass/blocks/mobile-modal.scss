@@ -47,7 +47,7 @@
   }
 }
 
-.success-button {
+.mobile-modal__success-button {
   padding: 20px;
   width: 280px;
   min-height: 58px;
@@ -59,7 +59,7 @@
   line-height: 26px;
 }
 
-.modal-error__button {
+.mobile-modal__error-button {
   width: 180px;
   min-height: 58px;
   background-color: $button-blue;
@@ -70,7 +70,7 @@
   line-height: 26px;
 }
 
-.modal-error {
+.mobile-modal__error {
   min-height: 280px;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -82,7 +82,7 @@
   transform: translateY(-50%);
 }
 
-.modal-success {
+.mobile-modal__success {
   min-height: 323px;
   display: flex;
   align-items: center;
@@ -95,11 +95,11 @@
   justify-content: space-between;
 }
 
-.error-text-wrapper {
+.mobile-modal__error-text-wrapper {
   padding: 45px 42px 28px 41px;
 }
 
-.success-text-wrapper {
+.mobile-modal__success-text-wrapper {
   padding: 39px 38px 30px 38px;
 }
 
@@ -123,11 +123,11 @@
     }
   }
 
-  .modal-error__button {
+  .mobile-modal__error-button {
     width: 272px;
   }
 
-  .modal-error {
+  .mobile-modal__error {
     min-height: 347px;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -144,7 +144,7 @@
     }
   }
 
-  .modal-success {
+  .mobile-modal__success {
     min-height: 347px;
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@
     }
   }
 
-  .success-button {
+  .mobile-modal__success-button {
     width: 458px;
   }
 

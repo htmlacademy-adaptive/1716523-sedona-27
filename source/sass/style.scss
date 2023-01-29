@@ -19,6 +19,11 @@
 @import "./blocks/button.scss";
 @import "./blocks/benefits.scss";
 @import "./blocks/review.scss";
+@import "./common-styles/text.scss";
+@import "./blocks/mobile-title.scss";
+@import "./blocks/mobile-text.scss";
+@import "./blocks/name-inputs.scss";
+@import "./blocks/contacts-inputs.scss";
 
 h1,
 h2,
@@ -48,8 +53,4 @@ p {
 
 img {
   display: block;
-}
-
-.text {
-  text-transform: uppercase;
 }

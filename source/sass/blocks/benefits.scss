@@ -95,7 +95,7 @@
     }
   }
 
-  .housing {
+  .benefits__item--housing {
     .benefits__icon-wrapper {
       width: 77px;
       height: 72px;
@@ -107,7 +107,7 @@
     }
   }
 
-  .food {
+  .benefits__item--food {
     .benefits__icon-wrapper {
       width: 80px;
       height: 68px;
@@ -119,7 +119,7 @@
     }
   }
 
-  .souvenirs {
+  .benefits__item--souvenirs {
     .benefits__icon-wrapper {
       width: 67px;
       height: 75px;
@@ -150,7 +150,7 @@
     }
   }
 
-  .housing {
+  .benefits__item--housing {
     .benefits__icon-wrapper {
       width: 80px;
       height: 73px;
@@ -162,7 +162,7 @@
     }
   }
 
-  .food {
+  .benefits__item--food {
     .benefits__icon-wrapper {
       width: 73px;
       height: 69px;
@@ -174,7 +174,7 @@
     }
   }
 
-  .souvenirs {
+  .benefits__item--souvenirs {
     .benefits__icon-wrapper {
       width: 77px;
       height: 75px;
@@ -187,7 +187,7 @@
   }
 }
 
-.souvenirs .benefits__text {
+.benefits__item--souvenirs .benefits__text {
   @media screen and (min-width: $desktop) {
     display: none;
   }

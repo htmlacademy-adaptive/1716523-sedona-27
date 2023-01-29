@@ -162,19 +162,6 @@
   display: block;
 }
 
-.mobile-title {
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 21px;
-}
-
-.mobile-text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
 @media screen and (min-width: $tablet) {
   .products-mobile {
     padding-left: 60px;
@@ -259,12 +246,6 @@
     &__video-text {
       padding: 0 100px;
     }
-  }
-
-  .mobile-title {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 26px;
   }
 
   .products-mobile__video-title {
