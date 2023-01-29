@@ -21,9 +21,7 @@
         <img src="img/header-logo.svg" alt="Логотип города Седона." class="main-header__logo-img" width="185"
           height="96">
       </a>
-      <!-- для открытия меню добавляем класс "open" к классу "main-nav" -->
-      <!-- для закрытия меню добавляем класс "close" к классу "main-nav" -->
-      <nav class="main-nav open" id="nav-toggle">
+      <nav class="main-nav main-nav--open main-nav--nojs" id="nav-toggle">
         <button class="main-nav__toggle" type="button" id="burger">
           <span class="main-nav__burger"></span>
           <span class="visually-hidden">кнопка вызова меню навигации</span>
@@ -31,16 +29,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__menu-list">
             <li class="main-nav__menu-item">
-              <a href="index.html" class="menu-link">главная</a>
+              <a href="index.html" class="main-nav__menu-link">главная</a>
             </li>
             <li class="main-nav__menu-item">
-              <a href="catalog.html" class="menu-link current">фото и видео</a>
+              <a href="catalog.html" class="main-nav__menu-link main-nav__menu-link--current">фото и видео</a>
             </li>
             <li class="main-nav__menu-item">
-              <a href="form.html" class="menu-link">форма отзыва</a>
+              <a href="form.html" class="main-nav__menu-link">форма отзыва</a>
             </li>
             <li class="main-nav__menu-item">
-              <a href="https://up.htmlacademy.ru/" class="menu-link">html academy</a>
+              <a href="https://up.htmlacademy.ru/" class="main-nav__menu-link">html academy</a>
               <div class="gradient"></div>
             </li>
           </ul>
@@ -193,7 +191,7 @@
                 srcset="img/video-cat-desktop.jpg 1x, img/video-cat-desktop-retina.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/video-cat-tablet.jpg 1x, img/video-cat-tablet-retina.jpg 2x">
-              <img class="products-mobile__img video-image" src="img/video-mobile-image.jpg"
+              <img class="products-mobile__img" src="img/video-mobile-image.jpg"
                 alt="видео достопримечательностей седоны" width="280" height="177"
                 srcset="img/video-cat-mobile-retina.jpg 2x">
             </picture>
@@ -207,7 +205,7 @@
 
     <footer class="footer">
       <h2 class="footer__title text">#visitsedona</h2>
-      <ul class="footer__list socials">
+      <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link" href="#">
             <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
@@ -246,7 +244,7 @@
       </div>
     </footer>
   </div>
-  <script src="./js/script.js"></script>
+  <!-- <script src="./js/script.js"></script> -->
 </body>
 
 </html>

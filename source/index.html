@@ -21,9 +21,7 @@
         <img src="img/header-logo.svg" alt="Логотип города Седона." class="main-header__logo-img" width="185"
           height="96">
       </a>
-      <!-- для открытия меню добавляем класс "open" к классу "main-nav" -->
-      <!-- для закрытия меню добавляем класс "close" к классу "main-nav" -->
-      <nav class="main-nav" id="nav-toggle">
+      <nav class="main-nav main-nav--open main-nav--nojs" id="nav-toggle">
         <button class="main-nav__toggle" type="button" id="burger">
           <span class="main-nav__burger"></span>
           <span class="visually-hidden">кнопка вызова меню навигации</span>
@@ -31,16 +29,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__menu-list">
             <li class="main-nav__menu-item">
-              <a href="index.html" class="menu-link current">главная</a>
+              <a href="index.html" class="main-nav__menu-link main-nav__menu-link--current">главная</a>
             </li>
             <li class="main-nav__menu-item">
-              <a href="catalog.html" class="menu-link">фото и видео</a>
+              <a href="catalog.html" class="main-nav__menu-link">фото и видео</a>
             </li>
             <li class="main-nav__menu-item">
-              <a href="form.html" class="menu-link">форма отзыва</a>
+              <a href="form.html" class="main-nav__menu-link">форма отзыва</a>
             </li>
             <li class="main-nav__menu-item">
-              <a href="https://up.htmlacademy.ru/" class="menu-link">html academy</a>
+              <a href="https://up.htmlacademy.ru/" class="main-nav__menu-link">html academy</a>
               <div class="gradient"></div>
             </li>
           </ul>
@@ -62,8 +60,8 @@
     <section class="advantages">
       <h2 class="advantages__title text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
       <ol class="advantages__list">
-        <li class="advantages__item adv1">
-          <div class="advantages__item-wrapper true-city ">
+        <li class="advantages__item">
+          <div class="advantages__item-wrapper true-city">
             <div class="advantages__text-wrapper true-city__wrapper ">
               <h3 class="advantages__item-title text">настоящий городок</h3>
               <div class="advantages__item-number">№1</div>
@@ -86,7 +84,7 @@
             </div>
           </div>
           <div class="benefits">
-            <div class="benefits__item housing">
+            <div class="benefits__item benefits__item--housing">
               <div class="benefits__icon-wrapper">
                 <svg class="benefits__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="38" fill="none"
                   viewBox="0 0 40 38">
@@ -98,7 +96,7 @@
                 <p class="benefits__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </div>
             </div>
-            <div class="benefits__item food">
+            <div class="benefits__item benefits__item--food">
               <div class="benefits__icon-wrapper">
                 <svg class="benefits__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36" fill="none"
                   viewBox="0 0 40 36">
@@ -110,7 +108,7 @@
                 <p class="benefits__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </div>
             </div>
-            <div class="benefits__item souvenirs">
+            <div class="benefits__item benefits__item--souvenirs">
               <div class="benefits__icon-wrapper">
                 <svg class="benefits__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="38" fill="none"
                   viewBox="0 0 32 38">
@@ -128,7 +126,7 @@
             </div>
           </div>
         </li>
-        <li class="advantages__item adv2">
+        <li class="advantages__item">
           <div class="advantages__item-wrapper devils-bridge ">
             <div class="advantages__text-wrapper devils-bridge__wrapper ">
               <h3 class="advantages__item-title text">там есть мост&nbsp;дьявола</h3>
@@ -193,7 +191,7 @@
 
     <footer class="footer">
       <h2 class="footer__title text">#visitsedona</h2>
-      <ul class="footer__list socials">
+      <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link" href="#">
             <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
@@ -232,7 +230,7 @@
       </div>
     </footer>
   </div>
-  <script src="/js/script.js"></script>
+  <!-- <script src="/js/script.js"></script> -->
 </body>
 
 </html>

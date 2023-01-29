@@ -80,55 +80,45 @@
     background-color: $form-input-color-hover;
   }
 
-  .first-name-input:active,
-  .last-name-input:active,
-  .patronymic-input:active {
+  .review-form__first-name-input:active,
+  .review-form__last-name-input:active,
+  .review-form__patronymic-input:active {
     background-color: rgb(255, 255, 255);
     outline: 4px solid rgba(229, 229, 229, 1);
     border: none;
   }
 
-  .first-name-input:focus,
-  .last-name-input:focus,
-  .patronymic-input:focus {
+  .review-form__first-name-input:focus,
+  .review-form__last-name-input:focus,
+  .review-form__patronymic-input:focus {
     background-color: rgb(255, 255, 255);
     outline: 4px solid rgba(229, 229, 229, 1);
     border: none;
   }
 
-  .contact-input:active {
+  .review-form__contact-input:active {
     background-color: rgb(255, 255, 255);
     outline: 4px solid rgba(229, 229, 229, 1);
     border: none;
   }
 
-  .contact-input:focus {
+  .review-form__contact-input:focus {
     background-color: rgb(255, 255, 255);
     outline: 4px solid rgba(229, 229, 229, 1);
     border: none;
   }
 }
 
-.name-inputs {
-  position: relative;
-  padding: 30px 0 24px 0;
-}
-
-.contacts-inputs {
-  padding: 28px 0 20px 0;
-  position: relative;
-}
-
-.impression-inputs {
+.review-form__impression-inputs {
   padding: 27px 0 5px 0;
   position: relative;
 }
 
-.impression-title {
+.review-form__impression-title {
   margin-bottom: 24px;
 }
 
-.impression-label {
+.review-form__impression-label {
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -136,12 +126,12 @@
   margin-bottom: 16px;
 }
 
-.attraction-inputs {
+.review-form__attraction-inputs {
   padding: 32px 0 7px 0;
   position: relative;
 }
 
-.attraction-label {
+.review-form__attraction-label {
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -149,57 +139,27 @@
   margin-bottom: 16px;
 }
 
-.name-inputs::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: $form-line-color;
-  position: absolute;
-  top: 100%;
-  right: 0;
-}
-
-.name-inputs::before {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: $form-line-color;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.contacts-inputs::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: $form-line-color;
-  position: absolute;
-  top: 100%;
-  right: 0;
-}
-
-.phone-input {
+.review-form__phone-input {
   background-image: url("../../img/phone-input-icon.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
   padding: 16px 58px 16px 16px;
 }
 
-.email-input {
+.review-form__email-input {
   background-image: url("../../img/email-input-icon.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
   padding: 16px 58px 16px 16px;
 }
 
-.phone-input::-webkit-outer-spin-button,
-.phone-input::-webkit-inner-spin-button {
+.review-form__phone-input::-webkit-outer-spin-button,
+.review-form__phone-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
 
-.impression-inputs::after {
+.review-form__impression-inputs::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -209,13 +169,13 @@
   right: 0;
 }
 
-.impression-input {
+.review-form__impression-input {
   width: 46px;
   height: 46px;
   margin: 0;
 }
 
-.impression-input[type="radio"]:checked + .radio-mark::before {
+.review-form__impression-input[type="radio"]:checked + .review-form__radio-mark::before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -227,16 +187,16 @@
   content: "";
 }
 
-.impression-input:focus + .radio-mark {
+.review-form__impression-input:focus + .review-form__radio-mark {
   outline: 2px solid rgb(0, 0, 0);
 }
 
-.attraction-input:focus + .checkbox-mark {
+.review-form__attraction-input:focus + .review-form__checkbox-mark {
   outline: 2px solid rgb(0, 0, 0);
 }
 
-.attraction-input[type="checkbox"]:checked + .checkbox-mark::before,
-.attraction-input[type="checkbox"]:checked + .checkbox-mark::after {
+.review-form__attraction-input[type="checkbox"]:checked + .review-form__checkbox-mark::before,
+.review-form__attraction-input[type="checkbox"]:checked + .review-form__checkbox-mark::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -247,7 +207,7 @@
   content: "";
 }
 
-.attraction-inputs::after {
+.review-form__attraction-inputs::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -257,33 +217,33 @@
   right: 0;
 }
 
-.attraction-title {
+.review-form__attraction-title {
   padding: 0;
   line-height: 22px;
   margin-bottom: 24px;
 }
 
-.impression-label:hover .radio-mark {
+.review-form__impression-label:hover .review-form__radio-mark {
   background-color: $form-input-color-hover;
 }
 
-.impression-label:active .radio-mark {
+.review-form__impression-label:active .review-form__radio-mark {
   background-color: rgba(213, 213, 213, 1);
 }
 
-.impression-label:active .radio-mark::before {
+.review-form__impression-label:active .review-form__radio-mark::before {
   background-color: rgba(51, 51, 51, 0.3);
 }
 
-.attraction-label:hover .checkbox-mark {
+.review-form__attraction-label:hover .review-form__checkbox-mark {
   background-color: $form-input-color-hover;
 }
 
-.attraction-label:active .checkbox-mark {
+.review-form__attraction-label:active .review-form__checkbox-mark {
   background-color: rgba(213, 213, 213, 1);
 }
 
-.impression-text {
+.review-form__impression-text {
   text-transform: none;
   color: rgba(0, 0, 0, 1);
   font-size: 18px;
@@ -293,7 +253,7 @@
   overflow-wrap: break-word;
 }
 
-.radio-mark {
+.review-form__radio-mark {
   position: relative;
   width: 46px;
   height: 46px;
@@ -302,13 +262,13 @@
   margin-right: 16px;
 }
 
-.attraction-input {
+.review-form__attraction-input {
   width: 46px;
   height: 46px;
   margin: 0;
 }
 
-.attraction-text {
+.review-form__attraction-text {
   text-transform: none;
   color: rgba(0, 0, 0, 1);
   font-size: 18px;
@@ -318,7 +278,7 @@
   overflow-wrap: break-word;
 }
 
-.checkbox-mark {
+.review-form__checkbox-mark {
   position: relative;
   width: 46px;
   height: 46px;
@@ -326,60 +286,25 @@
   margin-right: 16px;
 }
 
-.emotions-inputs {
+.review-form__emotions-inputs {
   padding: 27px 0 37px 0;
 }
 
-.emotions-title {
+.review-form__emotions-title {
   margin-bottom: 22px;
 }
 
-.emotions-textarea {
+.review-form__emotions-textarea {
   min-height: 150px;
 }
 
 @media screen and (min-width: $tablet) {
-  .name-inputs {
-    margin-right: 43px;
-    position: relative;
-
-    &__title {
-      padding-left: 40px;
-    }
-  }
-
-  .contacts-inputs__title {
-    margin-left: -40px;
-  }
-
-  .name-inputs::after {
-    content: "";
-    width: 1px;
-    height: 100%;
-    background-color: $form-line-color;
-    position: absolute;
-    top: 0;
-    right: -43px;
-  }
-
-  .contacts-inputs {
-    margin-left: 44px;
-  }
-
-  .name-inputs::before {
-    display: none;
-  }
-
-  .contacts-inputs::after {
-    display: none;
-  }
-
-  .impression-item {
+  .review-form__impression-item {
     width: 280px;
     margin-left: 19px;
   }
 
-  .impression-inputs {
+  .review-form__impression-inputs {
     grid-column: 1/3;
     display: flex;
     flex-direction: column;
@@ -387,55 +312,55 @@
     padding: 23px 0 0 0;
   }
 
-  .impression-inputs::after {
+  .review-form__impression-inputs::after {
     display: none;
   }
 
-  .attraction-inputs::after {
+  .review-form__attraction-inputs::after {
     display: none;
   }
 
-  .attraction-item {
+  .review-form__attraction-item {
     margin-left: 34px;
     min-width: 224px;
   }
 
-  .impression-label {
+  .review-form__impression-label {
     padding: 0;
   }
 
-  .impression-text {
+  .review-form__impression-text {
     max-width: 185px;
     overflow-wrap: break-word;
   }
 
-  .attraction-text {
+  .review-form__attraction-text {
     max-width: 130px;
     overflow-wrap: break-word;
   }
 
-  .radio-mark {
+  .review-form__radio-mark {
     margin-right: 16px;
   }
 
-  .attraction-list {
+  .review-form__attraction-list {
     margin-left: 33px;
   }
 
-  .review-form .attraction-title {
+  .review-form .review-form__attraction-title {
     padding: 0 130px;
     margin-bottom: 30px;
   }
 
-  .impression-title,
-  .attraction-title,
-  .emotions-title {
+  .review-form__impression-title,
+  .review-form__attraction-title,
+  .review-form__emotions-title {
     position: relative;
   }
 
-  .impression-title::before,
-  .attraction-title::before,
-  .emotions-title::before {
+  .review-form__impression-title::before,
+  .review-form__attraction-title::before,
+  .review-form__emotions-title::before {
     content: "";
     width: 123px;
     height: 1px;
@@ -445,9 +370,9 @@
     left: 0;
   }
 
-  .impression-title::after,
-  .attraction-title::after,
-  .emotions-title::after {
+  .review-form__impression-title::after,
+  .review-form__attraction-title::after,
+  .review-form__emotions-title::after {
     content: "";
     width: 123px;
     height: 1px;
@@ -497,12 +422,12 @@
     }
   }
 
-  .emotions-inputs {
+  .review-form__emotions-inputs {
     grid-column: 1/3;
     padding: 16px 0 29px 0;
   }
 
-  .attraction-inputs {
+  .review-form__attraction-inputs {
     grid-column: 1/3;
     display: flex;
     flex-direction: column;
@@ -520,7 +445,7 @@
     text-transform: uppercase;
   }
 
-  .emotions-textarea {
+  .review-form__emotions-textarea {
     width: 100%;
     min-height: 160px;
     color: rgba(0, 0, 0, 0.3);
@@ -528,9 +453,9 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .impression-title::before,
-  .attraction-title::before,
-  .emotions-title::before {
+  .review-form__impression-title::before,
+  .review-form__attraction-title::before,
+  .review-form__emotions-title::before {
     content: "";
     width: 280px;
     height: 1px;
@@ -540,9 +465,9 @@
     left: 0;
   }
 
-  .impression-title::after,
-  .attraction-title::after,
-  .emotions-title::after {
+  .review-form__impression-title::after,
+  .review-form__attraction-title::after,
+  .review-form__emotions-title::after {
     content: "";
     width: 280px;
     height: 1px;
@@ -566,85 +491,55 @@
     }
   }
 
-  .name-inputs {
-    border-right: 1px solid $form-line-color;
-    padding: 0;
-    padding-right: 64px;
-    margin-right: 0;
-
-    &__title {
-      padding-left: 63px;
-    }
-  }
-
-  .name-inputs input {
-    min-width: 430px;
-  }
-
-  .name-inputs::after {
-    display: none;
-  }
-
-  .contacts-inputs {
-    padding: 0;
-    padding-left: 63px;
-    margin: 0;
-
-    &__title {
-      text-align: start;
-      padding-left: 70px;
-    }
-  }
-
-  .impression-inputs {
+  .review-form__impression-inputs {
     padding-top: 56px;
     margin-bottom: 26px;
   }
 
-  .impression-title {
+  .review-form__impression-title {
     margin-bottom: 43px;
   }
 
-  .impression-list {
+  .review-form__impression-list {
     margin-left: 37px;
   }
 
-  .impression-item:not(:last-child) {
+  .review-form__impression-item:not(:last-child) {
     margin-right: 28px;
   }
 
-  .impression-item {
+  .review-form__impression-item {
     margin: 0;
   }
 
-  .attraction-inputs {
+  .review-form__attraction-inputs {
     margin-bottom: 54px;
     padding-bottom: 0;
   }
 
-  .review-form .attraction-title {
+  .review-form .review-form__attraction-title {
     padding: 0 275px;
     margin-bottom: 60px;
   }
 
-  .attraction-list {
+  .review-form__attraction-list {
     margin: 0;
     margin-left: 28px;
   }
 
-  .attraction-item {
+  .review-form__attraction-item {
     margin: 0;
   }
 
-  .attraction-item:not(:last-child) {
+  .review-form__attraction-item:not(:last-child) {
     margin-right: 12px;
   }
 
-  .attraction-item:last-child {
+  .review-form__attraction-item:last-child {
     margin-left: -22px;
   }
 
-  .emotions-textarea {
+  .review-form__emotions-textarea {
     width: 768px;
     margin: 0 auto;
     margin-bottom: 10px;
