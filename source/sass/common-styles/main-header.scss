@@ -6,6 +6,7 @@
     position: relative;
     justify-content: flex-end;
     min-height: 56px;
+    flex-direction: column;
 
     &__logo {
       display: inline-block;

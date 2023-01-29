@@ -1,51 +1,63 @@
 @import "../constants/colors.scss";
 
-.main-nav.open .main-nav__wrapper {
+.main-nav.main-nav--open .main-nav__wrapper {
   display: block;
   z-index: 11;
 }
 
-.main-nav.open .main-nav__burger {
+.main-nav.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  padding-top: 90px;
+}
+
+.main-nav.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav.main-nav--open .main-nav__burger {
   background-color: transparent;
 }
 
-.main-nav.open .main-nav__burger::before {
+.main-nav.main-nav--open .main-nav__burger::before {
   background-color: rgb(255, 255, 255);
   top: 0;
   left: 0;
   transform: rotate(45deg);
 }
 
-.main-nav.open .main-nav__burger::after {
+.main-nav.main-nav--open .main-nav__burger::after {
   background-color: rgb(255, 255, 255);
   top: 0;
   left: 0;
   transform: rotate(-45deg);
 }
 
-.main-nav.open .main-nav__toggle:hover .main-nav__burger::after {
+.main-nav.main-nav--open .main-nav__toggle:hover .main-nav__burger::after {
   background-color: rgb(255, 255, 255, 0.6);
 }
 
-.main-nav.open .main-nav__toggle:hover .main-nav__burger::before {
+.main-nav.main-nav--open .main-nav__toggle:hover .main-nav__burger::before {
   background-color: rgb(255, 255, 255, 0.6);
 }
 
-.main-nav.close .main-nav__wrapper {
+.main-nav.main-nav--close .main-nav__wrapper {
   display: none;
 }
 
 .main-nav {
+  min-height: 56px;
+  width: inherit;
+  position: relative;
+
   &__toggle {
-    position: relative;
+    position: absolute;
     border: none;
     padding: 0;
     right: 12px;
     width: 40px;
     height: 40px;
     background-color: inherit;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 6px;
     z-index: 12;
   }
 
@@ -161,8 +173,14 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+}
 
-  @media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) {
+  .main-nav.main-nav--nojs .main-nav__wrapper {
+    padding-top: 0;
+  }
+
+  .main-nav {
     position: unset;
     width: 100%;
 
@@ -228,8 +246,10 @@
       color: rgba(118, 99, 87, 1);
     }
   }
+}
 
-  @media screen and (min-width: $desktop) {
+@media screen and (min-width: $desktop) {
+  .main-nav {
     &__menu-list {
       padding: 0 44px 0 44px;
     }
@@ -239,7 +259,3 @@
     }
   }
 }
-
-// .menu-link {
-//   color: rgb(255, 255, 255);
-// }
